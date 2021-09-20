@@ -51,6 +51,15 @@ The template contains the following plugins:
 
     The report will be created in build/reports subdirectory in your project directory.
 
+  * lombok
+
+    https://projectlombok.org/setup/gradle
+
+    Lombok removes the need to write a lot of the boilerplate code
+    (Getters, Setters, Constructors, Builders) manually, and instead
+    auto generates it for you through the use of annotations such as @Data,
+    @Getters, @Setters and @Builder
+
   * io.spring.dependency-management
 
     https://github.com/spring-gradle-plugins/dependency-management-plugin

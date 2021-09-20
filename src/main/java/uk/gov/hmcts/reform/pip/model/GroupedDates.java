@@ -1,6 +1,7 @@
 package uk.gov.hmcts.reform.pip.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Builder;
 import lombok.Data;
 
 import java.time.LocalDate;
@@ -12,6 +13,7 @@ import javax.persistence.Id;
  * should be displayed and when they should be retained to.
  */
 @Data
+@Builder
 public class GroupedDates {
 
     @Id

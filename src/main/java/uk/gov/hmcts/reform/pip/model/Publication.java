@@ -1,5 +1,6 @@
 package uk.gov.hmcts.reform.pip.model;
 
+import lombok.Builder;
 import lombok.Data;
 
 import java.time.LocalDate;
@@ -10,6 +11,7 @@ import javax.persistence.Id;
  * This class displays details about the publication.
  */
 @Data
+@Builder
 public class Publication {
 
     @Id

@@ -1,5 +1,6 @@
 package uk.gov.hmcts.reform.pip.model;
 
+import lombok.Builder;
 import lombok.Data;
 import uk.gov.hmcts.reform.pip.constants.Constants;
 import uk.gov.hmcts.reform.pip.model.classified.fields.ClassifiedString;
@@ -14,6 +15,7 @@ import javax.persistence.Id;
  * This class displays details about an entity in the hearing.
  */
 @Data
+@Builder
 public class Entity {
 
     @Id
