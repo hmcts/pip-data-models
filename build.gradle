@@ -164,7 +164,6 @@ def versions = [
   junitPlatform   : '1.7.2',
   reformLogging   : '5.1.7',
   springBoot      : springBoot.class.package.implementationVersion,
-  springfoxSwagger: '3.0.0'
 ]
 
 ext.libraries = [
@@ -178,12 +177,8 @@ ext.libraries = [
 ]
 
 dependencies {
-  implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web'
-  implementation group: 'org.springframework.boot', name: 'spring-boot-starter-actuator'
   implementation group: 'org.springframework.boot', name: 'spring-boot-starter-aop'
   implementation group: 'org.springframework.boot', name: 'spring-boot-starter-json'
-
-  implementation group: 'io.springfox', name: 'springfox-swagger2', version: versions.springfoxSwagger
 
   implementation group: 'uk.gov.hmcts.reform', name: 'logging', version: versions.reformLogging
   implementation group: 'uk.gov.hmcts.reform', name: 'logging-appinsights', version: versions.reformLogging
