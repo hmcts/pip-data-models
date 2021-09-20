@@ -1,12 +1,19 @@
 package uk.gov.hmcts.reform.pip.model;
 
+import lombok.Data;
+
 import java.time.LocalDate;
 import java.util.List;
+import javax.persistence.Id;
 
 /**
- * This class displays details about the publication
+ * This class displays details about the publication.
  */
+@Data
 public class Publication {
+
+    @Id
+    private Long publicationId;
 
     private String courtHouseType;
 
