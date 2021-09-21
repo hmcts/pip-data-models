@@ -4,6 +4,7 @@ import lombok.Builder;
 import lombok.Data;
 import uk.gov.hmcts.reform.pip.constants.Constants;
 import uk.gov.hmcts.reform.pip.model.classified.fields.ClassifiedString;
+import uk.gov.hmcts.reform.pip.model.enums.Classification;
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.AttributeOverrides;
@@ -21,7 +22,7 @@ public class Judiciary {
     @Id
     private Long judiciaryId;
 
-    private String classification;
+    private Classification classification;
 
     @Embedded
     @AttributeOverrides({

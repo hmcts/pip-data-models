@@ -3,6 +3,7 @@ package uk.gov.hmcts.reform.pip.model;
 import lombok.Builder;
 import lombok.Data;
 import uk.gov.hmcts.reform.pip.model.classified.fields.ClassifiedString;
+import uk.gov.hmcts.reform.pip.model.enums.Classification;
 
 import java.util.List;
 import javax.persistence.AttributeOverride;
@@ -21,7 +22,7 @@ public class CourtRoom {
     @Id
     private int courtRoomId;
 
-    private String classification;
+    private Classification classification;
 
     @Embedded
     @AttributeOverrides({

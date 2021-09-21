@@ -2,6 +2,8 @@ package uk.gov.hmcts.reform.pip.model;
 
 import lombok.Builder;
 import lombok.Data;
+import uk.gov.hmcts.reform.pip.model.enums.Classification;
+import uk.gov.hmcts.reform.pip.model.enums.PublicationType;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -21,9 +23,9 @@ public class Publication {
 
     private int courtId;
 
-    private String publicationType;
+    private PublicationType publicationType;
 
-    private String classification;
+    private Classification classification;
 
     private LocalDate date;
 

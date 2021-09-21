@@ -3,7 +3,9 @@ package uk.gov.hmcts.reform.pip.model;
 import lombok.Builder;
 import lombok.Data;
 import uk.gov.hmcts.reform.pip.constants.Constants;
+import uk.gov.hmcts.reform.pip.model.classified.fields.ClassifiedPlatform;
 import uk.gov.hmcts.reform.pip.model.classified.fields.ClassifiedString;
+import uk.gov.hmcts.reform.pip.model.enums.Classification;
 
 import java.util.List;
 import javax.persistence.AttributeOverride;
@@ -22,7 +24,7 @@ public class Hearing {
     @Id
     private Integer hearingId;
 
-    private String classification;
+    private Classification classification;
 
     @Embedded
     @AttributeOverrides({
@@ -61,6 +63,6 @@ public class Hearing {
         @AttributeOverride(name = Constants.VALUE, column = @Column(name = "platform")),
         @AttributeOverride(name = Constants.CLASSIFICATION, column = @Column(name = "judge_classification")),
     })
-    private ClassifiedString platform;
+    private ClassifiedPlatform platform;
 
 }

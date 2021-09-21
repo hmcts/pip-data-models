@@ -2,6 +2,7 @@ package uk.gov.hmcts.reform.pip.model.classified.fields;
 
 import lombok.Getter;
 import lombok.Setter;
+import uk.gov.hmcts.reform.pip.model.enums.Classification;
 
 /**
  * Model which represents a classified field.
@@ -10,6 +11,6 @@ import lombok.Setter;
 @Setter
 public abstract class ClassifiedField {
 
-    protected String classification;
+    protected Classification classification;
 
 }
