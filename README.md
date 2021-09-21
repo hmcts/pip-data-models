@@ -8,18 +8,6 @@ This repository contains the models used throughout the PIP application
 
 This project just produces a gradle dependency, then can then be used in the other projects.
 
-## What's inside
-
-The template is a working application with a minimal setup. It contains:
- * application skeleton
- * setup script to prepare project
- * common plugins and libraries
- * swagger configuration for api documentation ([see how to publish your api documentation to shared repository](https://github.com/hmcts/reform-api-docs#publish-swagger-docs))
- * code quality tools already set up
- * integration with Travis CI
- * MIT license and contribution information
- * Helm chart using chart-java.
-
 ## Plugins
 
 The template contains the following plugins:
@@ -92,19 +80,15 @@ The template contains the following plugins:
       ./gradlew dependencyUpdates -Drevision=release
     ```
 
-## Setup
-
-Located in `./bin/init.sh`. Simply run and follow the explanation how to execute it.
-
 ## Notes
 
 Since Spring Boot 2.1 bean overriding is disabled. If you want to enable it you will need to set `spring.main.allow-bean-definition-overriding` to `true`.
 
 JUnit 5 is now enabled by default in the project. Please refrain from using JUnit4 and use the next generation
 
-## Building and deploying the application
+## Building, publishing and using the library
 
-### Building the application
+### Building the library
 
 The project uses [Gradle](https://gradle.org) as a build tool. It already contains
 `./gradlew` wrapper script, so there's no need to install gradle.
@@ -115,7 +99,7 @@ To build the project execute the following command:
   ./gradlew build
 ```
 
-### Publishing the application
+### Publishing the library
 
 This project is a library rather than a spring boot application.
 
@@ -125,6 +109,16 @@ To publish the application to the local repository, use
   ./gradlew clean build publishToMavenLocal
 ```
 The JAR that is published is also accessible in build/libs/
+
+### Importing the library
+
+The library can be imported into other projects by using
+
+```bash
+  implementation group: 'uk.gov.hmcts.reform', name: 'pip-data-models', version: '0.0.1'
+```
+
+in your buid.gradle file
 
 ## License
 
