@@ -115,6 +115,17 @@ To build the project execute the following command:
   ./gradlew build
 ```
 
+### Publishing the application
+
+This project is a library rather than a spring boot application.
+
+To publish the application to the local repository, use
+
+```bash
+  ./gradlew clean build publishToMavenLocal
+```
+The JAR that is published is also accessible in build/libs/
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
