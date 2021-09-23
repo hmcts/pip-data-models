@@ -1,10 +1,13 @@
 package uk.gov.hmcts.reform.pip.model;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class GroupedDatesTest {
 
@@ -36,6 +39,19 @@ public class GroupedDatesTest {
 
         GroupedDates groupedDates = GroupedDates.builder().legalProfessional(localDate).build();
         assertEquals(localDate, groupedDates.getLegalProfessional(), "Legal Professional should be set");
+    }
+
+    @Test
+    public void testSerialisationOfPublicField() throws JsonProcessingException {
+        LocalDate localDate = LocalDate.now();
+
+        GroupedDates groupedDates = GroupedDates.builder().publicDate(localDate).build();
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.findAndRegisterModules();
+        String returnedString = objectMapper.writeValueAsString(groupedDates);
+
+        assertTrue(returnedString.contains("\"public\":"), "Should contain the name public");
     }
 
 }
