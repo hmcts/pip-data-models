@@ -12,7 +12,7 @@ public class ClassifiedStringTest {
         ClassifiedString classifiedString = new ClassifiedString();
         classifiedString.setClassification(Classification.INTERNAL);
 
-        assertEquals(Classification.INTERNAL, classifiedString.getClassification());
+        assertEquals(Classification.INTERNAL, classifiedString.getClassification(), "Classification should be set");
     }
 
     @Test
@@ -20,7 +20,7 @@ public class ClassifiedStringTest {
         ClassifiedString classifiedString = new ClassifiedString();
         classifiedString.setValue("TestValue");
 
-        assertEquals("TestValue", classifiedString.getValue());
+        assertEquals("TestValue", classifiedString.getValue(), "Value should be set");
     }
 
 }

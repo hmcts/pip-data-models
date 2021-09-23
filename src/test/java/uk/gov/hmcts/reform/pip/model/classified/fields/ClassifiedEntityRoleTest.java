@@ -13,7 +13,7 @@ public class ClassifiedEntityRoleTest {
         ClassifiedEntityRole classifiedEntityRole = new ClassifiedEntityRole();
         classifiedEntityRole.setClassification(Classification.INTERNAL);
 
-        assertEquals(Classification.INTERNAL, classifiedEntityRole.getClassification());
+        assertEquals(Classification.INTERNAL, classifiedEntityRole.getClassification(), "Classification should be set");
     }
 
     @Test
@@ -21,7 +21,7 @@ public class ClassifiedEntityRoleTest {
         ClassifiedEntityRole classifiedEntityRole = new ClassifiedEntityRole();
         classifiedEntityRole.setValue(EntityRole.APPELLANT);
 
-        assertEquals(EntityRole.APPELLANT, classifiedEntityRole.getValue());
+        assertEquals(EntityRole.APPELLANT, classifiedEntityRole.getValue(), "Value should be set");
     }
 
 }

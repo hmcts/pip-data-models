@@ -14,7 +14,8 @@ public class ClassifiedLocalDateTimeTest {
         ClassifiedLocalDateTime classifiedLocalDateTime = new ClassifiedLocalDateTime();
         classifiedLocalDateTime.setClassification(Classification.INTERNAL);
 
-        assertEquals(Classification.INTERNAL, classifiedLocalDateTime.getClassification());
+        assertEquals(Classification.INTERNAL, classifiedLocalDateTime.getClassification(),
+                     "Classification should be set");
     }
 
     @Test
@@ -24,7 +25,7 @@ public class ClassifiedLocalDateTimeTest {
         ClassifiedLocalDateTime classifiedLocalDateTime = new ClassifiedLocalDateTime();
         classifiedLocalDateTime.setValue(localDateTime);
 
-        assertEquals(localDateTime, classifiedLocalDateTime.getValue());
+        assertEquals(localDateTime, classifiedLocalDateTime.getValue(), "Value should be set");
     }
 
 }

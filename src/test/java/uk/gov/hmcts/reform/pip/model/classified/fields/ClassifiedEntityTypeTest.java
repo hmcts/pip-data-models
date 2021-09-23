@@ -13,7 +13,7 @@ public class ClassifiedEntityTypeTest {
         ClassifiedEntityType classifiedEntityType = new ClassifiedEntityType();
         classifiedEntityType.setClassification(Classification.INTERNAL);
 
-        assertEquals(Classification.INTERNAL, classifiedEntityType.getClassification());
+        assertEquals(Classification.INTERNAL, classifiedEntityType.getClassification(), "Classification should be set");
     }
 
     @Test
@@ -21,7 +21,7 @@ public class ClassifiedEntityTypeTest {
         ClassifiedEntityType classifiedEntityType = new ClassifiedEntityType();
         classifiedEntityType.setValue(EntityType.INDIVIDUAL);
 
-        assertEquals(EntityType.INDIVIDUAL, classifiedEntityType.getValue());
+        assertEquals(EntityType.INDIVIDUAL, classifiedEntityType.getValue(), "Value should be set");
     }
 
 }

@@ -23,25 +23,25 @@ public class CourtRoomTest {
     @Test
     public void testCourtRoomId() {
         CourtRoom courtRoom = CourtRoom.builder().courtRoomId(2).build();
-        assertEquals(2, courtRoom.getCourtRoomId());
+        assertEquals(2, courtRoom.getCourtRoomId(), "Court room ID should be set");
     }
 
     @Test
     public void testClassification() {
         CourtRoom courtRoom = CourtRoom.builder().classification(Classification.INTERNAL).build();
-        assertEquals(Classification.INTERNAL, courtRoom.getClassification());
+        assertEquals(Classification.INTERNAL, courtRoom.getClassification(), "Classification should be set");
     }
 
     @Test
     public void testCourtRoomName() {
         CourtRoom courtRoom = CourtRoom.builder().courtRoomName(classifiedString).build();
-        assertEquals(classifiedString, courtRoom.getCourtRoomName());
+        assertEquals(classifiedString, courtRoom.getCourtRoomName(), "Court room name should be set");
     }
 
     @Test
     public void testSession() {
         CourtRoom courtRoom = CourtRoom.builder().session(classifiedString).build();
-        assertEquals(classifiedString, courtRoom.getSession());
+        assertEquals(classifiedString, courtRoom.getSession(), "Session should be set");
     }
 
     @Test
@@ -49,13 +49,13 @@ public class CourtRoomTest {
         Judiciary judiciary = Judiciary.builder().judiciaryId(2L).build();
 
         CourtRoom courtRoom = CourtRoom.builder().judiciary(judiciary).build();
-        assertEquals(judiciary, courtRoom.getJudiciary());
+        assertEquals(judiciary, courtRoom.getJudiciary(), "Judiciary should be set");
     }
 
     @Test
     public void testSessionType() {
         CourtRoom courtRoom = CourtRoom.builder().sessionType(classifiedString).build();
-        assertEquals(classifiedString, courtRoom.getSessionType());
+        assertEquals(classifiedString, courtRoom.getSessionType(), "Session type should be set");
     }
 
     @Test
@@ -63,7 +63,7 @@ public class CourtRoomTest {
         List<Hearing> hearings = List.of(Hearing.builder().hearingId(2).build());
 
         CourtRoom courtRoom = CourtRoom.builder().hearings(hearings).build();
-        assertEquals(hearings, courtRoom.getHearings());
+        assertEquals(hearings, courtRoom.getHearings(), "Hearings list should be set");
     }
 
 }

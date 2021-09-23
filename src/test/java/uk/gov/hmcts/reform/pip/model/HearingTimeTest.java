@@ -29,25 +29,25 @@ public class HearingTimeTest {
     @Test
     public void testHearingTimeId() {
         HearingTime hearingTime = HearingTime.builder().hearingTimeId(2L).build();
-        assertEquals(2L, hearingTime.getHearingTimeId());
+        assertEquals(2L, hearingTime.getHearingTimeId(), "Hearing time ID should be set");
     }
 
     @Test
     public void testClassification() {
         HearingTime hearingTime = HearingTime.builder().classification(Classification.INTERNAL).build();
-        assertEquals(Classification.INTERNAL, hearingTime.getClassification());
+        assertEquals(Classification.INTERNAL, hearingTime.getClassification(), "Classification should be set");
     }
 
     @Test
     public void testStart() {
         HearingTime hearingTime = HearingTime.builder().start(classifiedLocalDateTime).build();
-        assertEquals(classifiedLocalDateTime, hearingTime.getStart());
+        assertEquals(classifiedLocalDateTime, hearingTime.getStart(), "Hearing start should be set");
     }
 
     @Test
     public void testDuration() {
         HearingTime hearingTime = HearingTime.builder().duration(classifiedString).build();
-        assertEquals(classifiedString, hearingTime.getDuration());
+        assertEquals(classifiedString, hearingTime.getDuration(), "Duration should be set");
     }
 
 }

@@ -42,37 +42,37 @@ public class EntityTest {
     @Test
     public void testEntityId() {
         Entity entity = Entity.builder().entityId(2).build();
-        assertEquals(2, entity.getEntityId());
+        assertEquals(2, entity.getEntityId(), "Entity ID should be set");
     }
 
     @Test
     public void testClassification() {
         Entity entity = Entity.builder().classification(Classification.INTERNAL).build();
-        assertEquals(Classification.INTERNAL, entity.getClassification());
+        assertEquals(Classification.INTERNAL, entity.getClassification(), "Classification should be set");
     }
 
     @Test
     public void testName() {
         Entity entity = Entity.builder().name(classifiedString).build();
-        assertEquals(classifiedString, entity.getName());
+        assertEquals(classifiedString, entity.getName(), "Name should be set");
     }
 
     @Test
     public void testType() {
         Entity entity = Entity.builder().type(classifiedEntityType).build();
-        assertEquals(classifiedEntityType, entity.getType());
+        assertEquals(classifiedEntityType, entity.getType(), "Type should be set");
     }
 
     @Test
     public void testRoleType() {
         Entity entity = Entity.builder().roleType(classifiedEntityRoleType).build();
-        assertEquals(classifiedEntityRoleType, entity.getRoleType());
+        assertEquals(classifiedEntityRoleType, entity.getRoleType(), "Role Type should be set");
     }
 
     @Test
     public void testRole() {
         Entity entity = Entity.builder().role(classifiedEntityRole).build();
-        assertEquals(classifiedEntityRole, entity.getRole());
+        assertEquals(classifiedEntityRole, entity.getRole(), "Role should be set");
     }
 
 }

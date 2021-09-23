@@ -13,7 +13,7 @@ public class ClassifiedPlatformTest {
         ClassifiedPlatform classifiedPlatform = new ClassifiedPlatform();
         classifiedPlatform.setClassification(Classification.INTERNAL);
 
-        assertEquals(Classification.INTERNAL, classifiedPlatform.getClassification());
+        assertEquals(Classification.INTERNAL, classifiedPlatform.getClassification(), "Classification should be set");
     }
 
     @Test
@@ -21,7 +21,7 @@ public class ClassifiedPlatformTest {
         ClassifiedPlatform classifiedPlatform = new ClassifiedPlatform();
         classifiedPlatform.setValue(Platform.CFT);
 
-        assertEquals(Platform.CFT, classifiedPlatform.getValue());
+        assertEquals(Platform.CFT, classifiedPlatform.getValue(), "Value should be set");
     }
 
 }
