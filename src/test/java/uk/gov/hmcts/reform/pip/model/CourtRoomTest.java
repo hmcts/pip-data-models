@@ -22,7 +22,7 @@ public class CourtRoomTest {
 
     @Test
     public void testCourtRoomId() {
-        CourtRoom courtRoom = CourtRoom.builder().courtRoomId(2).build();
+        CourtRoom courtRoom = CourtRoom.builder().courtRoomId(2L).build();
         assertEquals(2, courtRoom.getCourtRoomId(), "Court room ID should be set");
     }
 
@@ -60,7 +60,7 @@ public class CourtRoomTest {
 
     @Test
     public void testHearings() {
-        List<Hearing> hearings = List.of(Hearing.builder().hearingId(2).build());
+        List<Hearing> hearings = List.of(Hearing.builder().hearingId(2L).build());
 
         CourtRoom courtRoom = CourtRoom.builder().hearings(hearings).build();
         assertEquals(hearings, courtRoom.getHearings(), "Hearings list should be set");

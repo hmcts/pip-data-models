@@ -20,7 +20,7 @@ import javax.persistence.Id;
 public class CourtRoom {
 
     @Id
-    private int courtRoomId;
+    private Long courtRoomId;
 
     private Classification classification;
 

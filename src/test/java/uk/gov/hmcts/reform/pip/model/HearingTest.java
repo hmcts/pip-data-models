@@ -29,7 +29,7 @@ public class HearingTest {
 
     @Test
     public void testHearingId() {
-        Hearing hearing = Hearing.builder().hearingId(2).build();
+        Hearing hearing = Hearing.builder().hearingId(2L).build();
         assertEquals(2, hearing.getHearingId(), "Hearing ID should be set");
     }
 
@@ -59,7 +59,7 @@ public class HearingTest {
 
     @Test
     public void testEntities() {
-        List<Entity> entities = List.of(Entity.builder().entityId(2).build());
+        List<Entity> entities = List.of(Entity.builder().entityId(2L).build());
 
         Hearing hearing = Hearing.builder().entities(entities).build();
         assertEquals(entities, hearing.getEntities(), "Entities should be set");

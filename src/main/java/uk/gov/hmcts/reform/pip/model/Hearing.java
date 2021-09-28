@@ -22,7 +22,7 @@ import javax.persistence.Id;
 public class Hearing {
 
     @Id
-    private Integer hearingId;
+    private Long hearingId;
 
     private Classification classification;
 

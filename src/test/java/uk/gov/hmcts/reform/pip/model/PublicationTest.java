@@ -72,7 +72,7 @@ public class PublicationTest {
 
     @Test
     public void testCourtRooms() {
-        List<CourtRoom> courtRoom = List.of(CourtRoom.builder().courtRoomId(1).build());
+        List<CourtRoom> courtRoom = List.of(CourtRoom.builder().courtRoomId(1L).build());
         Publication publication = Publication.builder().courtRooms(courtRoom).build();
         assertEquals(courtRoom, publication.getCourtRooms(), "Court rooms should be set");
     }

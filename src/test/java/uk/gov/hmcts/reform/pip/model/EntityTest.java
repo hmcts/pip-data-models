@@ -41,7 +41,7 @@ public class EntityTest {
 
     @Test
     public void testEntityId() {
-        Entity entity = Entity.builder().entityId(2).build();
+        Entity entity = Entity.builder().entityId(2L).build();
         assertEquals(2, entity.getEntityId(), "Entity ID should be set");
     }
 

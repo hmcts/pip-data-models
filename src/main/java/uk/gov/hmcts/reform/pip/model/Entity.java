@@ -23,7 +23,7 @@ import javax.persistence.Id;
 public class Entity {
 
     @Id
-    private Integer entityId;
+    private Long entityId;
 
     private Classification classification;
 
