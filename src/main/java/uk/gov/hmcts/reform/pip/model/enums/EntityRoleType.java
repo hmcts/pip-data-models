@@ -5,6 +5,6 @@ package uk.gov.hmcts.reform.pip.model.enums;
  */
 public enum EntityRoleType {
 
-    DEFENCE, APPELLANT, PROSOCUTION, REPRESENTATIVE
+    DEFENCE, APPELLANT, PROSECUTION, REPRESENTATIVE
 
 }
