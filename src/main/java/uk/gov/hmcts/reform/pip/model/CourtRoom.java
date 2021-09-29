@@ -2,6 +2,7 @@ package uk.gov.hmcts.reform.pip.model;
 
 import lombok.Builder;
 import lombok.Data;
+import uk.gov.hmcts.reform.pip.constants.Constants;
 import uk.gov.hmcts.reform.pip.model.classified.fields.ClassifiedString;
 import uk.gov.hmcts.reform.pip.model.enums.Classification;
 
@@ -26,15 +27,15 @@ public class CourtRoom {
 
     @Embedded
     @AttributeOverrides({
-        @AttributeOverride(name = "value", column = @Column(name = "courtRoomName")),
-        @AttributeOverride(name = "classification", column = @Column(name = "courtRoomName_classification")),
+        @AttributeOverride(name = Constants.VALUE, column = @Column(name = "courtRoomName")),
+        @AttributeOverride(name = Constants.CLASSIFICATION, column = @Column(name = "courtRoomName_classification")),
     })
     private ClassifiedString courtRoomName;
 
     @Embedded
     @AttributeOverrides({
-        @AttributeOverride(name = "value", column = @Column(name = "session")),
-        @AttributeOverride(name = "classification", column = @Column(name = "session_classification")),
+        @AttributeOverride(name = Constants.VALUE, column = @Column(name = "session")),
+        @AttributeOverride(name = Constants.CLASSIFICATION, column = @Column(name = "session_classification")),
     })
     private ClassifiedString session;
 
@@ -42,8 +43,8 @@ public class CourtRoom {
 
     @Embedded
     @AttributeOverrides({
-        @AttributeOverride(name = "value", column = @Column(name = "sessionType")),
-        @AttributeOverride(name = "classification", column = @Column(name = "sessionType_classification")),
+        @AttributeOverride(name = Constants.VALUE, column = @Column(name = "sessionType")),
+        @AttributeOverride(name = Constants.CLASSIFICATION, column = @Column(name = "sessionType_classification")),
     })
     private ClassifiedString sessionType;
 
