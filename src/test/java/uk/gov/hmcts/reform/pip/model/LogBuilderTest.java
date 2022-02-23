@@ -2,6 +2,7 @@ package uk.gov.hmcts.reform.pip.model;
 
 import org.junit.jupiter.api.Test;
 import uk.gov.hmcts.reform.pip.model.enums.UserActions;
+
 import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -19,8 +20,8 @@ class LogBuilderTest {
 
     @Test
     void testWriteLog() {
-        assertEquals(RETURNED_STRING.substring(0, RETURNED_STRING.length() -10),
-                     writeLog(USER_EMAIL, USER_ACTION, ACTION_VALUE).substring(0, RETURNED_STRING.length() -10),
+        assertEquals(RETURNED_STRING.substring(0, RETURNED_STRING.length() - 10),
+                     writeLog(USER_EMAIL, USER_ACTION, ACTION_VALUE).substring(0, RETURNED_STRING.length() - 10),
                      "Returned String should match with date trimmed for testing purposes");
     }
 }
