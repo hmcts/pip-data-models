@@ -6,7 +6,8 @@ public enum UserActions {
     CREATE_ACCOUNT("Created account for:"),
     REMOVE_ACCOUNT("Removed account for:"),
     APPROVE_MEDIA("Approved media request"),
-    REJECT_MEDIA("Rejected media request");
+    REJECT_MEDIA("Rejected media request"),
+    LOCATION_UPLOAD("Uploaded locations");
 
     public final String actionLog;
 
