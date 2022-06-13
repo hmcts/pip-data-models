@@ -21,11 +21,11 @@ public final class LogBuilder {
                              LocalDateTime.now());
     }
 
-    public static String writeGenericLog(String actionValue) {
+    public static String writeLog(String actionValue) {
         return String.format("Track: %s, at %s", actionValue, LocalDateTime.now());
     }
 
-    public static String writeGenericLog(UUID actioningUserId, String actionValue) {
+    public static String writeLog(UUID actioningUserId, String actionValue) {
         return String.format("Track: %s, %s, at %s", actioningUserId, actionValue, LocalDateTime.now());
     }
 
