@@ -10,6 +10,7 @@ public enum UserActions {
     LOCATION_UPLOAD("Uploaded locations"),
     CREATE_SUBSCRIPTION("Created subscription"),
     DELETE_SUBSCRIPTION("Deleted subscription"),
+    UPDATE_LIST_TYPE_LOCATION_SUBSCRIPTION("Update list type for location subscription"),
     CREATE_MEDIA_APPLICATION("Create media application"),
     UPDATE_MEDIA_APPLICATION("Update media application"),
     DELETE_MEDIA_APPLICATION("Delete media application");
