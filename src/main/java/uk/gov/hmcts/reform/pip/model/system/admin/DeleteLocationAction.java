@@ -1,7 +1,7 @@
 package uk.gov.hmcts.reform.pip.model.system.admin;
 
 /**
- * A specific model which represents the delete location action
+ * A specific model which represents the delete location action.
  */
 public class DeleteLocationAction extends SystemAdminAction {
 
@@ -11,6 +11,7 @@ public class DeleteLocationAction extends SystemAdminAction {
     private String detailString;
 
     public DeleteLocationAction() {
+        super();
         this.changeType = ChangeType.DELETE_LOCATION;
     }
 

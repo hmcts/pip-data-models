@@ -1,7 +1,7 @@
 package uk.gov.hmcts.reform.pip.model.system.admin;
 
 /**
- * Class which represents the system admin change type
+ * Class which represents the system admin change type.
  */
 public enum ChangeType {
     ADD_USER("Add User"),

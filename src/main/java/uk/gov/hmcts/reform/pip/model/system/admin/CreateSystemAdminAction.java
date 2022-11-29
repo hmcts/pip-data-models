@@ -11,6 +11,7 @@ public class CreateSystemAdminAction extends SystemAdminAction {
     private String accountEmail;
 
     public CreateSystemAdminAction() {
+        super();
         this.changeType = ChangeType.ADD_USER;
     }
 

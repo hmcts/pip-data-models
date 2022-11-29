@@ -5,7 +5,7 @@ import lombok.Getter;
 import java.util.List;
 
 /**
- * Abstract Class which represents a system admin action
+ * Abstract Class which represents a system admin action.
  */
 @Getter
 public abstract class SystemAdminAction {
