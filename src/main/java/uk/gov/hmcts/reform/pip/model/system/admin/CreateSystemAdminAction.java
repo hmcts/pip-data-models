@@ -1,8 +1,13 @@
 package uk.gov.hmcts.reform.pip.model.system.admin;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * A specific model which represents the create system admin action.
  */
+@Getter
+@Setter
 public class CreateSystemAdminAction extends SystemAdminAction {
 
     /**

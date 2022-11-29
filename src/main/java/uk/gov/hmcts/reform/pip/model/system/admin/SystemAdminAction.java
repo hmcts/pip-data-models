@@ -1,6 +1,7 @@
 package uk.gov.hmcts.reform.pip.model.system.admin;
 
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
 
@@ -8,6 +9,7 @@ import java.util.List;
  * Abstract Class which represents a system admin action.
  */
 @Getter
+@Setter
 public abstract class SystemAdminAction {
 
     /**
