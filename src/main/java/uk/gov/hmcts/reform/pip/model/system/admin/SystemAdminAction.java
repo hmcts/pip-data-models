@@ -1,5 +1,6 @@
 package uk.gov.hmcts.reform.pip.model.system.admin;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,6 +11,7 @@ import java.util.List;
  */
 @Getter
 @Setter
+@JsonDeserialize(as = DeleteLocationAction.class)
 public abstract class SystemAdminAction {
 
     /**
@@ -37,5 +39,4 @@ public abstract class SystemAdminAction {
      * @return A string that can be passed to notify to detail the change that has taken place.
      */
     public abstract String createAdditionalChangeDetail();
-
 }
