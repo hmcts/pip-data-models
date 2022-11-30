@@ -1,6 +1,7 @@
 package uk.gov.hmcts.reform.pip.model.system.admin;
 
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,7 +12,11 @@ import java.util.List;
  */
 @Getter
 @Setter
-@JsonDeserialize(as = DeleteLocationAction.class)
+@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "changeType")
+@JsonSubTypes({
+    @JsonSubTypes.Type(value = DeleteLocationAction.class, name = "DELETE_LOCATION"),
+    @JsonSubTypes.Type(value = CreateSystemAdminAction.class, name = "ADD_USER")
+})
 public abstract class SystemAdminAction {
 
     /**
