@@ -125,10 +125,10 @@ repositories {
 }
 
 def versions = [
-  junit           : '5.9.1',
+  junit           : '5.7.2',
   junitPlatform   : '1.7.2',
-  reformLogging   : '6.0.1',
-  spring : '2.7.6'
+  reformLogging   : '5.1.7',
+  spring : '2.5.7'
 ]
 
 ext.libraries = [
