@@ -15,7 +15,9 @@ import java.util.List;
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "changeType")
 @JsonSubTypes({
     @JsonSubTypes.Type(value = DeleteLocationAction.class, name = "DELETE_LOCATION"),
-    @JsonSubTypes.Type(value = CreateSystemAdminAction.class, name = "ADD_USER")
+    @JsonSubTypes.Type(value = CreateSystemAdminAction.class, name = "ADD_USER"),
+    @JsonSubTypes.Type(value = DeleteLocationSubscriptionAction.class,
+        name = "DELETE_LOCATION_SUBSCRIPTION"),
 })
 public abstract class SystemAdminAction {
 
