@@ -18,6 +18,8 @@ import java.util.List;
     @JsonSubTypes.Type(value = CreateSystemAdminAction.class, name = "ADD_USER"),
     @JsonSubTypes.Type(value = DeleteLocationSubscriptionAction.class,
         name = "DELETE_LOCATION_SUBSCRIPTION"),
+    @JsonSubTypes.Type(value = DeleteLocationArtefactAction.class,
+        name = "DELETE_LOCATION_ARTEFACT"),
 })
 public abstract class SystemAdminAction {
 
