@@ -5,6 +5,7 @@ package uk.gov.hmcts.reform.pip.model.enums;
  */
 public enum AuditAction {
     ATTEMPT_SYSTEM_ADMIN_CREATION,
+    ADMIN_CREATION,
     SYSTEM_ADMIN_CREATION,
     REFERENCE_DATA_UPLOAD,
     REFERENCE_DATA_DOWNLOAD,
