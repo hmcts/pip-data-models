@@ -2,6 +2,7 @@ package uk.gov.hmcts.reform.pip.model.subscription;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,6 +15,7 @@ import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
+@EqualsAndHashCode
 @JsonPropertyOrder({"id", "channel", "searchType", "searchValue", "userID"})
 public class Subscription {
     /**
