@@ -126,7 +126,7 @@ repositories {
 
 def versions = [
   junit           : '5.9.2',
-  junitPlatform   : '1.9.2',
+  junitPlatform   : '1.9.3',
   reformLogging   : '5.1.7',
   spring : '2.7.10'
 ]
