@@ -128,7 +128,7 @@ def versions = [
   junit           : '5.9.2',
   junitPlatform   : '1.9.2',
   reformLogging   : '5.1.7',
-  spring : '2.7.10'
+  spring : '3.0.6'
 ]
 
 ext.libraries = [
