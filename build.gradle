@@ -20,7 +20,7 @@ publishing {
 }
 
 group = 'com.github.hmcts'
-version = '2.0.2'
+version = '2.0.3'
 
 java {
   toolchain {
@@ -125,10 +125,10 @@ repositories {
 }
 
 def versions = [
-  junit           : '5.9.2',
-  junitPlatform   : '1.9.2',
+  junit           : '5.9.3',
+  junitPlatform   : '1.9.3',
   reformLogging   : '5.1.7',
-  spring : '2.7.10'
+  spring : '2.7.11'
 ]
 
 ext.libraries = [
@@ -155,7 +155,7 @@ dependencies {
   implementation group: 'org.springframework.boot', name: 'spring-boot-starter-oauth2-client', version: "${versions.spring}"
   implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.7.0'
 
-  implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: "2.14.2"
+  implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: "2.15.0"
   implementation 'com.opencsv:opencsv:5.7.1'
 
   testImplementation libraries.junit5
