@@ -57,6 +57,9 @@ public class Subscription {
     private String caseName;
 
     @Valid
+    private String partyNames;
+
+    @Valid
     private String urn;
 
     @Valid
