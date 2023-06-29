@@ -1,12 +1,12 @@
 package uk.gov.hmcts.reform.pip.model.location;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter

@@ -51,12 +51,12 @@ test {
 
 checkstyle {
   maxWarnings = 0
-  toolVersion = '8.29'
+  toolVersion = '10.12.1'
   getConfigDirectory().set(new File(rootDir, 'config/checkstyle'))
 }
 
 pmd {
-  toolVersion = "6.18.0"
+  toolVersion = "6.52.0"
   sourceSets = [sourceSets.main, sourceSets.test]
   reportsDir = file("$project.buildDir/reports/pmd")
   // https://github.com/pmd/pmd/issues/876
@@ -83,6 +83,12 @@ sonarqube {
   }
 }
 
+configurations {
+  all {
+    exclude group: 'commons-logging', module: 'commons-logging'
+  }
+}
+
 // before committing a change, make sure task still works
 dependencyUpdates {
   def isNonStable = { String version ->
@@ -105,16 +111,6 @@ dependencyCheck {
   analyzers {
     // Disable scanning of .NET related binaries
     assemblyEnabled = false
-  }
-}
-
-dependencyManagement {
-  dependencies {
-    dependency group: 'org.bouncycastle', name: 'bcpkix-jdk15on', version: '1.70'
-    // CVE-2018-10237 - Unbounded memory allocation
-    dependencySet(group: 'com.google.guava', version: '32.0.0-jre') {
-      entry 'guava'
-    }
   }
 }
 
