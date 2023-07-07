@@ -1,12 +1,12 @@
 package uk.gov.hmcts.reform.pip.model.subscription;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.UUID;
-import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
