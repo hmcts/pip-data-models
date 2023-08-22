@@ -2,6 +2,7 @@ package uk.gov.hmcts.reform.pip.model.publication;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.experimental.Accessors;
 import uk.gov.hmcts.reform.pip.model.account.Roles;
 import uk.gov.hmcts.reform.pip.model.account.UserProvenances;
 import uk.gov.hmcts.reform.pip.model.location.LocationType;
@@ -25,11 +26,11 @@ import static uk.gov.hmcts.reform.pip.model.location.LocationType.VENUE;
 @Getter
 @AllArgsConstructor
 public enum ListType {
-    SJP_PUBLIC_LIST(NATIONAL, PI_AAD, ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES),
+    SJP_PUBLIC_LIST(NATIONAL, PI_AAD, ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null, null, true, false),
     SJP_PRESS_LIST(NATIONAL, PI_AAD, ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null,
-                   "SJP Press List (Full list)"),
+                   "SJP Press List (Full list)", true, false),
     SJP_DELTA_PRESS_LIST(NATIONAL, PI_AAD, ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, SJP_PRESS_LIST,
-                         "SJP Press List (New Cases)"),
+                         "SJP Press List (New Cases)", true, false),
     SJP_PRESS_REGISTER(NATIONAL, PI_AAD, ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES),
     CROWN_DAILY_LIST(VENUE, CRIME_IDAM, ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES),
     CROWN_FIRM_LIST(VENUE, CRIME_IDAM, ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES),
@@ -44,7 +45,7 @@ public enum ListType {
     ET_DAILY_LIST(OWNING_HEARING_LOCATION, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     SSCS_DAILY_LIST(OWNING_HEARING_LOCATION, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     SSCS_DAILY_LIST_ADDITIONAL_HEARINGS(OWNING_HEARING_LOCATION, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                        SSCS_DAILY_LIST, "SSCS Daily List - Additional Hearings"),
+                                        SSCS_DAILY_LIST, "SSCS Daily List - Additional Hearings", false, true),
     IAC_DAILY_LIST(VENUE, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     CARE_STANDARDS_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     PRIMARY_HEALTH_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES);
@@ -73,6 +74,12 @@ public enum ListType {
      * Friendly name of the list if it is different to the list type name.
      */
     private String friendlyName;
+
+    @Accessors(fluent = true)
+    private boolean hasExcel = false;
+
+    @Accessors(fluent = true)
+    private boolean hasAdditionalPdf = true;
 
     ListType(LocationType listLocationLevel, UserProvenances allowedProvenance, List<Roles> allowedThirdPartyRoles) {
         this.listLocationLevel = listLocationLevel;
