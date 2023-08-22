@@ -76,7 +76,7 @@ public enum ListType {
     private String friendlyName;
 
     @Accessors(fluent = true)
-    private boolean hasExcel = false;
+    private boolean hasExcel;
 
     @Accessors(fluent = true)
     private boolean hasAdditionalPdf = true;
