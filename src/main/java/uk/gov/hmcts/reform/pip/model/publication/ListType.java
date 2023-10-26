@@ -48,7 +48,9 @@ public enum ListType {
                                         SSCS_DAILY_LIST, "SSCS Daily List - Additional Hearings", false, true),
     IAC_DAILY_LIST(VENUE, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     CARE_STANDARDS_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
-    PRIMARY_HEALTH_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES);
+    PRIMARY_HEALTH_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
+    OPA_PRESS_LIST(VENUE, PI_AAD, ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null, null, false, false);
+
 
     /**
      * Flag that represents the Location Type level the list displays at.
