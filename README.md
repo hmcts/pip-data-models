@@ -1,105 +1,44 @@
-# PIP Data Models
+# pip-cron-trigger
 
-[![Build Status](https://travis-ci.org/hmcts/spring-boot-template.svg?branch=master)](https://travis-ci.org/hmcts/spring-boot-template)
+## Table of Contents
 
-## Purpose
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+    - [General](#General)
+    - [Local development](#local-development)
+  - [Installation](#installation)
+    - [Publishing the library](#publishing-the-library)
+    - [Importing the library](#importing-the-library)
+- [Test Suite](#test-suite)
+  - [Unit tests](#unit-tests)
+- [Contributing](#contributing)
+- [License](#license)
 
-This repository contains the models used throughout the PIP application
+## Overview
 
-This project just produces a gradle dependency, then can then be used in the other projects.
+This repository contains the models used throughout CaTH application.
 
-## Plugins
+This project produces a single maven artefact, pushed up to jitpack, which is then used by other CaTH services.
 
-The template contains the following plugins:
+## Getting Started
 
-  * checkstyle
+### Prerequisites
 
-    https://docs.gradle.org/current/userguide/checkstyle_plugin.html
+#### General
 
-    Performs code style checks on Java source files using Checkstyle and generates reports from these checks.
-    The checks are included in gradle's *check* task (you can run them by executing `./gradlew check` command).
+- [Java JDK 17](https://openjdk.org/projects/jdk/17/) - this is used throughout all of our services.
 
-  * pmd
+##### Local development
 
-    https://docs.gradle.org/current/userguide/pmd_plugin.html
+No specific requirements, other than the standard IDE and Java 17.
 
-    Performs static code analysis to finds common programming flaws. Included in gradle `check` task.
+### Installation
 
+- Clone the repository
+- Build using the command `./gradlew clean build`
 
-  * jacoco
-
-    https://docs.gradle.org/current/userguide/jacoco_plugin.html
-
-    Provides code coverage metrics for Java code via integration with JaCoCo.
-    You can create the report by running the following command:
-
-    ```bash
-      ./gradlew jacocoTestReport
-    ```
-
-    The report will be created in build/reports subdirectory in your project directory.
-
-  * lombok
-
-    https://projectlombok.org/setup/gradle
-
-    Lombok removes the need to write a lot of the boilerplate code
-    (Getters, Setters, Constructors, Builders) manually, and instead
-    auto generates it for you through the use of annotations such as @Data,
-    @Getters, @Setters and @Builder
-
-  * io.spring.dependency-management
-
-    https://github.com/spring-gradle-plugins/dependency-management-plugin
-
-    Provides Maven-like dependency management. Allows you to declare dependency management
-    using `dependency 'groupId:artifactId:version'`
-    or `dependency group:'group', name:'name', version:version'`.
-
-  * org.springframework.boot
-
-    http://projects.spring.io/spring-boot/
-
-    Reduces the amount of work needed to create a Spring application
-
-  * org.owasp.dependencycheck
-
-    https://jeremylong.github.io/DependencyCheck/dependency-check-gradle/index.html
-
-    Provides monitoring of the project's dependent libraries and creating a report
-    of known vulnerable components that are included in the build. To run it
-    execute `gradle dependencyCheck` command.
-
-  * com.github.ben-manes.versions
-
-    https://github.com/ben-manes/gradle-versions-plugin
-
-    Provides a task to determine which dependencies have updates. Usage:
-
-    ```bash
-      ./gradlew dependencyUpdates -Drevision=release
-    ```
-
-## Notes
-
-Since Spring Boot 2.1 bean overriding is disabled. If you want to enable it you will need to set `spring.main.allow-bean-definition-overriding` to `true`.
-
-JUnit 5 is now enabled by default in the project. Please refrain from using JUnit4 and use the next generation
-
-## Building, publishing and using the library
-
-### Building the library
-
-The project uses [Gradle](https://gradle.org) as a build tool. It already contains
-`./gradlew` wrapper script, so there's no need to install gradle.
-
-To build the project execute the following command:
-
-```bash
-  ./gradlew build
-```
-
-### Publishing the library
+#### Publishing the library
 
 This project is a library rather than a spring boot application.
 
@@ -110,7 +49,7 @@ To publish the application to the local repository, use
 ```
 The JAR that is published is also accessible in build/libs/
 
-### Importing the library
+#### Importing the library
 
 The library can be imported into other projects by using
 
@@ -118,7 +57,19 @@ The library can be imported into other projects by using
   implementation group: 'uk.gov.hmcts.reform', name: 'pip-data-models', version: '0.0.1'
 ```
 
-in your buid.gradle file
+in your build.gradle file
+
+## Test Suite
+
+This library is comprehensively tested using a suite of unit tests.
+
+### Unit tests
+
+Unit tests can be run on demand using `./gradlew test`.
+
+## Contributing
+
+We are happy to accept third-party contributions. See [.github/CONTRIBUTING.md](./.github/CONTRIBUTING.md) for more details.
 
 ## License
 
