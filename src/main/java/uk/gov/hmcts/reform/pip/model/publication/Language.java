@@ -5,6 +5,5 @@ package uk.gov.hmcts.reform.pip.model.publication;
  */
 public enum Language {
     ENGLISH,
-    WELSH,
-    BI_LINGUAL
+    WELSH
 }
