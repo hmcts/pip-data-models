@@ -10,6 +10,7 @@
   - [Installation](#installation)
     - [Publishing the library](#publishing-the-library)
     - [Importing the library](#importing-the-library)
+  - [Fortify](#fortify)
 - [Test Suite](#test-suite)
   - [Unit tests](#unit-tests)
 - [Contributing](#contributing)
@@ -58,6 +59,10 @@ The library can be imported into other projects by using
 ```
 
 in your build.gradle file
+
+### Fortify
+
+We use Fortify to scan for security vulnerabilities. This is run as part of our nightly pipelines.
 
 ## Test Suite
 

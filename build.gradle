@@ -118,6 +118,7 @@ repositories {
   mavenLocal()
   mavenCentral()
   jcenter()
+  maven { url 'https://jitpack.io' }
 }
 
 def versions = [
@@ -150,6 +151,13 @@ dependencies {
     exclude group: 'junit', module: 'junit'
     exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
   }
+  testImplementation group: 'com.github.hmcts', name: 'fortify-client', version: '1.4.0', classifier: 'all'
+}
+
+task fortifyScan(type: JavaExec)  {
+  main = "uk.gov.hmcts.fortifyclient.FortifyClientMainApp"
+  classpath += sourceSets.test.runtimeClasspath
+  jvmArgs = ['--add-opens=java.base/java.lang.reflect=ALL-UNNAMED']
 }
 
 wrapper {
