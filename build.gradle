@@ -125,7 +125,7 @@ def versions = [
   junit           : '5.10.1',
   junitPlatform   : '1.9.3',
   reformLogging   : '5.1.7',
-  spring : '3.2.1'
+  spring : '3.2.2'
 ]
 
 configurations.all {
