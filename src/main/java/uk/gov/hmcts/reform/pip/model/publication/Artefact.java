@@ -88,7 +88,7 @@ public class Artefact {
     private LocalDateTime displayTo;
 
     /**
-     * The size of the input payload
+     * The size of the input payload.
      */
     private Float payloadSize;
 
