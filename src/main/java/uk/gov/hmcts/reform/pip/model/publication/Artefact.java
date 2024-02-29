@@ -88,6 +88,11 @@ public class Artefact {
     private LocalDateTime displayTo;
 
     /**
+     * The size of the input payload
+     */
+    private Float payloadSize;
+
+    /**
      * Metadata that will be indexed for searching.
      */
     private Map<String, List<Object>> search;
