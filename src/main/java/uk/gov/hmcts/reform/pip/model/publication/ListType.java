@@ -82,6 +82,7 @@ public enum ListType {
     private boolean hasExcel;
 
     @Accessors(fluent = true)
+    @SuppressWarnings("PMD.ImmutableField")
     private boolean hasAdditionalPdf = true;
 
     ListType(LocationType listLocationLevel, UserProvenances allowedProvenance, List<Roles> allowedThirdPartyRoles) {
