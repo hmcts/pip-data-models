@@ -120,7 +120,7 @@ repositories {
 }
 
 def versions = [
-  spring : '3.2.4'
+  spring : '3.2.5'
 ]
 
 configurations.all {
