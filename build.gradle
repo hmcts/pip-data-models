@@ -20,11 +20,11 @@ publishing {
 }
 
 group = 'com.github.hmcts'
-version = '2.1.25'
+version = '2.1.26'
 
 java {
   toolchain {
-    languageVersion = JavaLanguageVersion.of(17)
+    languageVersion = JavaLanguageVersion.of(21)
   }
 }
 
