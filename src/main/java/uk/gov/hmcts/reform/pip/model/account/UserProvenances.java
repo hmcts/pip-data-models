@@ -10,11 +10,13 @@ public enum UserProvenances {
     CFT_IDAM,
     CRIME_IDAM,
     PI_AAD,
-    THIRD_PARTY;
+    THIRD_PARTY,
+    SSO;
 
     public static final List<UserProvenances> ALL_NON_THIRD_PARTY_PROVENANCES = List.of(
         CFT_IDAM,
         CRIME_IDAM,
-        PI_AAD
+        PI_AAD,
+        SSO
     );
 }
