@@ -70,4 +70,7 @@ public class Subscription {
 
     @Valid
     private List<String> listType;
+
+    @Valid
+    private List<String> listLanguage;
 }
