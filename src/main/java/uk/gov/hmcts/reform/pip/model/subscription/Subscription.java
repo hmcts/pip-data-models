@@ -67,7 +67,4 @@ public class Subscription {
 
     @Valid
     private LocalDateTime lastUpdatedDate;
-
-    @Valid
-    private List<String> listType;
 }
