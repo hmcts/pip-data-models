@@ -24,9 +24,9 @@ import java.util.List;
 public abstract class SystemAdminAction {
 
     /**
-     * The name of the requester for the action.
+     * The email of the requester for the action.
      */
-    protected String requesterName;
+    protected String requesterEmail;
 
     /**
      * Whether the action was successful.
