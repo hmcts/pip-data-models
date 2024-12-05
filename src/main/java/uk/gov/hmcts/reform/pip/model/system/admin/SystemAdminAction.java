@@ -2,6 +2,7 @@ package uk.gov.hmcts.reform.pip.model.system.admin;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -26,21 +27,25 @@ public abstract class SystemAdminAction {
     /**
      * The email of the requester for the action.
      */
+    @NotNull
     protected String requesterEmail;
 
     /**
      * Whether the action was successful.
      */
+    @NotNull
     protected ActionResult actionResult;
 
     /**
      * The type of change that has been requested.
      */
+    @NotNull
     protected ChangeType changeType;
 
     /**
      * The list of users to notify about the email.
      */
+    @NotNull
     protected List<String> emailList;
 
     /**
