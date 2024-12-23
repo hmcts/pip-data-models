@@ -135,6 +135,8 @@ dependencies {
   implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: "2.18.2"
   implementation 'com.opencsv:opencsv:5.9'
 
+  testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
   testImplementation(platform('org.junit:junit-bom:5.11.4'))
   testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
   testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: spring, {
