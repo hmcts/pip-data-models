@@ -9,7 +9,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public final class ListTypeHelper {
-    private static final Set<String> ACRONYMS = Set.of("COP", "ET", "IAC", "OPA", "SJP", "SSCS");
+    private static final Set<String> ACRONYMS = Set.of("COP", "ET", "IAC", "OPA", "SJP", "SSCS", "CIC");
     private static final Set<String> CONJUNCTIONS = Set.of("and");
 
     private ListTypeHelper() {
