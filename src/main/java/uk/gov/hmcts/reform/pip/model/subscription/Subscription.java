@@ -10,7 +10,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
-import java.util.List;
 import java.util.UUID;
 
 @Getter
@@ -67,7 +66,4 @@ public class Subscription {
 
     @Valid
     private LocalDateTime lastUpdatedDate;
-
-    @Valid
-    private List<String> listType;
 }
