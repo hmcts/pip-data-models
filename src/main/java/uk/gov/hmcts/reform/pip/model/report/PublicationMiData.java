@@ -34,7 +34,6 @@ public class PublicationMiData {
     @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
     private LocalDateTime contentDate;
     private String locationId;
-    private String locationName;
     private ListType listType;
 
     @JsonCreator
@@ -50,7 +49,6 @@ public class PublicationMiData {
         @JsonProperty("type") ArtefactType type,
         @JsonProperty("contentDate") LocalDateTime contentDate,
         @JsonProperty("locationId") String locationId,
-        @JsonProperty("locationName") String locationName,
         @JsonProperty("listType") ListType listType
     ) {
         this.artefactId = artefactId;
@@ -64,7 +62,6 @@ public class PublicationMiData {
         this.type = type;
         this.contentDate = contentDate;
         this.locationId = locationId;
-        this.locationName = locationName;
         this.listType = listType;
     }
 
