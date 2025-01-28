@@ -14,7 +14,7 @@ import java.util.UUID;
 @Getter
 @Setter
 @NoArgsConstructor
-public class LocalSubscriptionMiData {
+public class LocationSubscriptionMiData {
 
     private UUID id;
     private String searchValue;
@@ -25,7 +25,7 @@ public class LocalSubscriptionMiData {
     private LocalDateTime createdDate;
 
     @JsonCreator
-    public LocalSubscriptionMiData(
+    public LocationSubscriptionMiData(
         @JsonProperty("id") UUID id,
         @JsonProperty("searchValue") String searchValue,
         @JsonProperty("channel") Channel channel,
