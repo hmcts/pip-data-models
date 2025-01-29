@@ -3,6 +3,7 @@ package uk.gov.hmcts.reform.pip.model.report;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -16,6 +17,7 @@ import java.util.UUID;
 
 @Getter
 @Setter
+@EqualsAndHashCode
 @SuppressWarnings("PMD.ExcessiveParameterList")
 @NoArgsConstructor
 public class PublicationMiData {
