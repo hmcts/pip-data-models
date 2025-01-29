@@ -17,7 +17,7 @@ import java.util.UUID;
 @Setter
 @EqualsAndHashCode
 @NoArgsConstructor
-public class AccountMiData {
+public class AccountMiData implements MiDataInterface {
 
     /**
      * The ID of the user as they exist in P&I.
@@ -67,4 +67,17 @@ public class AccountMiData {
         this.createdDate = createdDate;
         this.lastSignedInDate = lastSignedInDate;
     }
+
+    @Override
+    public String[] getHeaders() {
+        return new String[] {"userId", "provenanceUserId", "userProvenance", "roles",
+            "createdDate", "lastSignedInDate"};
+    }
+
+    @Override
+    public String[] getData() {
+        return new String[] {String.valueOf(userId), provenanceUserId, String.valueOf(userProvenance),
+            String.valueOf(roles), String.valueOf(createdDate), String.valueOf(lastSignedInDate)};
+    }
+
 }

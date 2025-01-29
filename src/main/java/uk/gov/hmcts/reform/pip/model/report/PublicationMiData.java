@@ -20,7 +20,7 @@ import java.util.UUID;
 @EqualsAndHashCode
 @SuppressWarnings("PMD.ExcessiveParameterList")
 @NoArgsConstructor
-public class PublicationMiData {
+public class PublicationMiData implements MiDataInterface {
 
     private UUID artefactId;
     @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
@@ -66,6 +66,20 @@ public class PublicationMiData {
         this.contentDate = contentDate;
         this.locationId = locationId;
         this.listType = listType;
+    }
+
+    @Override
+    public String[] getHeaders() {
+        return new String[] {"artefactId", "displayFrom", "displayTo", "language", "provenance", "sensitivity",
+            "sourceArtefactId", "supersededCount", "type", "contentDate", "locationId", "locationName", "listType"};
+    }
+
+    @Override
+    public String[] getData() {
+        return new String[] {String.valueOf(artefactId), String.valueOf(displayFrom), String.valueOf(displayTo),
+            String.valueOf(language), provenance, String.valueOf(sensitivity), sourceArtefactId,
+            String.valueOf(supersededCount), String.valueOf(type), String.valueOf(contentDate), locationId,
+            locationName, String.valueOf(listType)};
     }
 
 }

@@ -16,7 +16,7 @@ import java.util.UUID;
 @Setter
 @EqualsAndHashCode
 @NoArgsConstructor
-public class LocationSubscriptionMiData {
+public class LocationSubscriptionMiData implements MiDataInterface {
 
     private UUID id;
     private String searchValue;
@@ -41,5 +41,16 @@ public class LocationSubscriptionMiData {
         this.userId = userId;
         this.locationName = locationName;
         this.createdDate = createdDate;
+    }
+
+    @Override
+    public String[] getHeaders() {
+        return new String[] {"id", "searchValue", "channel", "userId", "locationName", "createdDate"};
+    }
+
+    @Override
+    public String[] getData() {
+        return new String[] {String.valueOf(id), searchValue, String.valueOf(channel), userId,
+            locationName, String.valueOf(createdDate)};
     }
 }
