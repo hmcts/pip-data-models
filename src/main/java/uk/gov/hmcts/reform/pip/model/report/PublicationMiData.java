@@ -36,6 +36,7 @@ public class PublicationMiData {
     @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
     private LocalDateTime contentDate;
     private String locationId;
+    private String locationName;
     private ListType listType;
 
     @JsonCreator
