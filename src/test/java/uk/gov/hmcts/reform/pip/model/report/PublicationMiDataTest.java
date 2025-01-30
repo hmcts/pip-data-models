@@ -41,7 +41,6 @@ class PublicationMiDataTest {
                              "locationName", "listType");
     }
 
-
     @Test
     void testGetData() {
         assertThat(PUBLICATION_MI_RECORD.getData())
