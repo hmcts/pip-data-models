@@ -1,7 +1,6 @@
 package uk.gov.hmcts.reform.pip.model.report;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -13,7 +12,10 @@ import uk.gov.hmcts.reform.pip.model.publication.ListType;
 import uk.gov.hmcts.reform.pip.model.publication.Sensitivity;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 import java.util.UUID;
+
+import static uk.gov.hmcts.reform.pip.model.report.MiDataInterface.formatDateTime;
 
 @Getter
 @Setter
@@ -23,9 +25,7 @@ import java.util.UUID;
 public class PublicationMiData implements MiDataInterface {
 
     private UUID artefactId;
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
     private LocalDateTime displayFrom;
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
     private LocalDateTime displayTo;
     private Language language;
     private String provenance;
@@ -33,7 +33,6 @@ public class PublicationMiData implements MiDataInterface {
     private String sourceArtefactId;
     private Integer supersededCount;
     private ArtefactType type;
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
     private LocalDateTime contentDate;
     private String locationId;
     private String locationName;
@@ -69,17 +68,21 @@ public class PublicationMiData implements MiDataInterface {
     }
 
     @Override
-    public String[] getHeaders() {
-        return new String[] {"artefactId", "displayFrom", "displayTo", "language", "provenance", "sensitivity",
-            "sourceArtefactId", "supersededCount", "type", "contentDate", "locationId", "locationName", "listType"};
+    public String[] generateReportHeaders() {
+        return new String[] {"artefact_id", "display_from", "display_to", "language", "provenance", "sensitivity",
+            "source_artefact_id", "superseded_count",
+            "type", "content_date", "court_id", "court_name", "list_type"};
     }
 
     @Override
-    public String[] getData() {
-        return new String[] {String.valueOf(artefactId), String.valueOf(displayFrom), String.valueOf(displayTo),
-            String.valueOf(language), provenance, String.valueOf(sensitivity), sourceArtefactId,
-            String.valueOf(supersededCount), String.valueOf(type), String.valueOf(contentDate), locationId,
-            locationName, String.valueOf(listType)};
+    public String[] generateReportData() {
+        return new String[] {Objects.toString(artefactId, ""), formatDateTime(displayFrom),
+            formatDateTime(displayTo), Objects.toString(language, ""),
+            Objects.toString(provenance, ""), Objects.toString(sensitivity, ""),
+            Objects.toString(sourceArtefactId, ""), Objects.toString(supersededCount, ""),
+            Objects.toString(type, ""), formatDateTime(contentDate),
+            Objects.toString(locationId, ""), Objects.toString(locationName, ""),
+            Objects.toString(listType, "")};
     }
 
 }

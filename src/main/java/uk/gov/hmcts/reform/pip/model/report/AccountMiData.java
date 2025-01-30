@@ -1,7 +1,6 @@
 package uk.gov.hmcts.reform.pip.model.report;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -11,7 +10,10 @@ import uk.gov.hmcts.reform.pip.model.account.Roles;
 import uk.gov.hmcts.reform.pip.model.account.UserProvenances;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 import java.util.UUID;
+
+import static uk.gov.hmcts.reform.pip.model.report.MiDataInterface.formatDateTime;
 
 @Getter
 @Setter
@@ -42,13 +44,11 @@ public class AccountMiData implements MiDataInterface {
     /**
      * The timestamp of when the user was created.
      */
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
     private LocalDateTime createdDate;
 
     /**
      * The timestamp when the user was last signed in.
      */
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
     private LocalDateTime lastSignedInDate;
 
     @JsonCreator
@@ -69,15 +69,16 @@ public class AccountMiData implements MiDataInterface {
     }
 
     @Override
-    public String[] getHeaders() {
-        return new String[] {"userId", "provenanceUserId", "userProvenance", "roles",
-            "createdDate", "lastSignedInDate"};
+    public String[] generateReportHeaders() {
+        return new String[] {"user_id", "provenance_user_id", "user_provenance", "roles",
+            "created_date", "last_signed_in_date"};
     }
 
     @Override
-    public String[] getData() {
-        return new String[] {String.valueOf(userId), provenanceUserId, String.valueOf(userProvenance),
-            String.valueOf(roles), String.valueOf(createdDate), String.valueOf(lastSignedInDate)};
+    public String[] generateReportData() {
+        return new String[] {Objects.toString(userId, ""), Objects.toString(provenanceUserId, ""),
+            Objects.toString(userProvenance, ""), Objects.toString(roles, ""),
+            formatDateTime(createdDate), formatDateTime(lastSignedInDate)};
     }
 
 }

@@ -23,16 +23,16 @@ class LocationSubscriptionMiDataTest {
 
     @Test
     void testGetHeaders() {
-        assertThat(LOCATION_SUBS_MI_RECORD.getHeaders())
-            .containsExactly("id", "searchValue", "channel", "userId", "locationName", "createdDate");
+        assertThat(LOCATION_SUBS_MI_RECORD.generateReportHeaders())
+            .containsExactly("id", "search_value", "channel", "user_id", "court_name", "created_date");
     }
 
 
     @Test
     void testGetData() {
-        assertThat(LOCATION_SUBS_MI_RECORD.getData())
+        assertThat(LOCATION_SUBS_MI_RECORD.generateReportData())
             .containsExactly(SUBSCRIPTION_ID.toString(), SEARCH_VALUE, EMAIL_CHANNEL.toString(),
-                             USER_ID.toString(), LOCATION_NAME, CREATED_DATE.toString());
+                             USER_ID.toString(), LOCATION_NAME, "2022-01-19 13:45:50");
     }
 
 }

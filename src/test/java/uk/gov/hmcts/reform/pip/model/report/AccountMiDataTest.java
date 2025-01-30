@@ -25,17 +25,17 @@ class AccountMiDataTest {
 
     @Test
     void testGetHeaders() {
-        assertThat(ACCOUNT_MI_RECORD.getHeaders())
-            .containsExactly("userId", "provenanceUserId", "userProvenance", "roles",
-                             "createdDate", "lastSignedInDate");
+        assertThat(ACCOUNT_MI_RECORD.generateReportHeaders())
+            .containsExactly("user_id", "provenance_user_id", "user_provenance", "roles",
+                             "created_date", "last_signed_in_date");
     }
 
 
     @Test
     void testGetData() {
-        assertThat(ACCOUNT_MI_RECORD.getData())
+        assertThat(ACCOUNT_MI_RECORD.generateReportData())
             .containsExactly(USER_ID.toString(), PROVENANCE_ID.toString(),
                              PI_AAD.toString(), INTERNAL_ADMIN_CTSC.toString(),
-                             CREATED_DATE.toString(), LAST_SIGNED_IN.toString());
+                             "2022-01-19 13:45:50", "2023-01-25 14:22:43");
     }
 }

@@ -25,16 +25,16 @@ class AllSubscriptionMiDataTest {
 
     @Test
     void testGetHeaders() {
-        assertThat(ALL_SUBS_MI_RECORD.getHeaders())
-            .containsExactly("id", "channel", "searchType", "userId", "locationName", "createdDate");
+        assertThat(ALL_SUBS_MI_RECORD.generateReportHeaders())
+            .containsExactly("id", "channel", "search_type", "user_id", "court_name", "created_date");
     }
 
 
     @Test
     void testGetData() {
-        assertThat(ALL_SUBS_MI_RECORD.getData())
+        assertThat(ALL_SUBS_MI_RECORD.generateReportData())
             .containsExactly(SUBSCRIPTION_ID.toString(), EMAIL_CHANNEL.toString(),
-                             SEARCH_TYPE.toString(), USER_ID.toString(), LOCATION_NAME, CREATED_DATE.toString());
+                             SEARCH_TYPE.toString(), USER_ID.toString(), LOCATION_NAME, "2022-01-19 13:45:50");
     }
 
 }
