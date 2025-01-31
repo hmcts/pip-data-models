@@ -23,7 +23,7 @@ class LocationSubscriptionMiDataTest {
 
     @Test
     void testGetHeaders() {
-        assertThat(LOCATION_SUBS_MI_RECORD.generateReportHeaders())
+        assertThat(LocationSubscriptionMiData.generateReportHeaders())
             .containsExactly("id", "search_value", "channel", "user_id", "court_name", "created_date");
     }
 

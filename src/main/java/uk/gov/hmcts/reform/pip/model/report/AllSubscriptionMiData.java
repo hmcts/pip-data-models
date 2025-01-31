@@ -45,8 +45,7 @@ public class AllSubscriptionMiData implements MiDataInterface {
         this.createdDate = createdDate;
     }
 
-    @Override
-    public String[] generateReportHeaders() {
+    public static String[] generateReportHeaders() {
         return new String[] {"id", "channel", "search_type", "user_id", "court_name", "created_date"};
     }
 

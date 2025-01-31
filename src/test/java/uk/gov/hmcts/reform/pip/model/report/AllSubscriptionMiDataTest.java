@@ -25,7 +25,7 @@ class AllSubscriptionMiDataTest {
 
     @Test
     void testGetHeaders() {
-        assertThat(ALL_SUBS_MI_RECORD.generateReportHeaders())
+        assertThat(AllSubscriptionMiData.generateReportHeaders())
             .containsExactly("id", "channel", "search_type", "user_id", "court_name", "created_date");
     }
 

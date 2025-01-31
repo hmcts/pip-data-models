@@ -68,8 +68,7 @@ public class AccountMiData implements MiDataInterface {
         this.lastSignedInDate = lastSignedInDate;
     }
 
-    @Override
-    public String[] generateReportHeaders() {
+    public static String[] generateReportHeaders() {
         return new String[] {"user_id", "provenance_user_id", "user_provenance", "roles",
             "created_date", "last_signed_in_date"};
     }

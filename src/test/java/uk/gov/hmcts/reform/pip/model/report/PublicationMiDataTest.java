@@ -35,7 +35,7 @@ class PublicationMiDataTest {
 
     @Test
     void testGetHeaders() {
-        assertThat(PUBLICATION_MI_RECORD.generateReportHeaders())
+        assertThat(PublicationMiData.generateReportHeaders())
             .containsExactly("artefact_id", "display_from", "display_to", "language", "provenance", "sensitivity",
                              "source_artefact_id", "superseded_count", "type", "content_date", "court_id",
                              "court_name", "list_type");

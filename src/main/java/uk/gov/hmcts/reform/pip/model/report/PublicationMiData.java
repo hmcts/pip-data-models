@@ -67,8 +67,7 @@ public class PublicationMiData implements MiDataInterface {
         this.listType = listType;
     }
 
-    @Override
-    public String[] generateReportHeaders() {
+    public static String[] generateReportHeaders() {
         return new String[] {"artefact_id", "display_from", "display_to", "language", "provenance", "sensitivity",
             "source_artefact_id", "superseded_count",
             "type", "content_date", "court_id", "court_name", "list_type"};

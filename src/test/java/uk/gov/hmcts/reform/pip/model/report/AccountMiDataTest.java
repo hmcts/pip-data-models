@@ -25,7 +25,7 @@ class AccountMiDataTest {
 
     @Test
     void testGetHeaders() {
-        assertThat(ACCOUNT_MI_RECORD.generateReportHeaders())
+        assertThat(AccountMiData.generateReportHeaders())
             .containsExactly("user_id", "provenance_user_id", "user_provenance", "roles",
                              "created_date", "last_signed_in_date");
     }
