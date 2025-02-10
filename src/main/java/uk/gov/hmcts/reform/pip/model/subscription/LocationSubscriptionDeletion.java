@@ -15,7 +15,7 @@ import java.util.List;
 @AllArgsConstructor
 public class LocationSubscriptionDeletion {
     @NotNull
-    String locationName;
+    String locationId;
 
     @NotNull
     List<String> subscriberEmails = new ArrayList<>();
