@@ -1,8 +1,8 @@
 package uk.gov.hmcts.reform.pip.model.report;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,19 +10,22 @@ import uk.gov.hmcts.reform.pip.model.subscription.Channel;
 import uk.gov.hmcts.reform.pip.model.subscription.SearchType;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 import java.util.UUID;
+
+import static uk.gov.hmcts.reform.pip.model.report.MiDataInterface.formatDateTime;
 
 @Getter
 @Setter
+@EqualsAndHashCode
 @NoArgsConstructor
-public class AllSubscriptionMiData {
+public class AllSubscriptionMiData implements MiDataInterface {
 
     private UUID id;
     private Channel channel;
     private SearchType searchType;
     private String userId;
     private String locationName;
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
     private LocalDateTime createdDate;
 
     @JsonCreator
@@ -40,5 +43,16 @@ public class AllSubscriptionMiData {
         this.userId = userId;
         this.locationName = locationName;
         this.createdDate = createdDate;
+    }
+
+    public static String[] generateReportHeaders() {
+        return new String[] {"id", "channel", "search_type", "user_id", "court_name", "created_date"};
+    }
+
+    @Override
+    public String[] generateReportData() {
+        return new String[] {Objects.toString(id, ""), Objects.toString(channel, ""),
+            Objects.toString(searchType, ""), Objects.toString(userId, ""),
+            Objects.toString(locationName, ""), formatDateTime(createdDate)};
     }
 }
