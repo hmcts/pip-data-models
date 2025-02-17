@@ -116,7 +116,7 @@ public enum ListType {
         SSCS_MIDLANDS_DAILY_HEARING_LIST,
         "South East First-tier Tribunal (Social Security and Child Support) Daily Hearing List",
     false, true),
-    SSCS_WALES_AND_SOUTH_EAST_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+    SSCS_WALES_AND_SOUTH_WEST_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
         SSCS_MIDLANDS_DAILY_HEARING_LIST,
         "Wales and South West First-tier Tribunal (Social Security and Child Support) Daily Hearing List",
     false, true),
