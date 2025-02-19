@@ -108,7 +108,9 @@ public enum ListType {
                                      false, true),
     RPT_SOUTHERN_WEEKLY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
         RPT_LONDON_WEEKLY_HEARING_LIST, "Residential Property Tribunal: Southern Region Weekly Hearing List",
-                                     false, true);
+                                     false, true),
+    AST_DAILY_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES);
+
 
     /**
      * Flag that represents the Location Type level the list displays at.
