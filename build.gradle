@@ -20,7 +20,7 @@ publishing {
 }
 
 group = 'com.github.hmcts'
-version = '2.2.8'
+version = '2.2.9'
 
 java {
   toolchain {
