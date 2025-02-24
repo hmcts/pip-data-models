@@ -110,6 +110,34 @@ public enum ListType {
         RPT_LONDON_WEEKLY_HEARING_LIST, "First-tier Tribunal (Residential Property Tribunal): Southern region Weekly Hearing List",
                                      false, true);
 
+    SSCS_MIDLANDS_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+        null, "Midlands First-tier Tribunal (Social Security and Child Support) Daily Hearing List",
+                                   false, true),
+    SSCS_SOUTH_EAST_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+        SSCS_MIDLANDS_DAILY_HEARING_LIST,
+        "South East First-tier Tribunal (Social Security and Child Support) Daily Hearing List",
+    false, true),
+    SSCS_WALES_AND_SOUTH_WEST_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+        SSCS_MIDLANDS_DAILY_HEARING_LIST,
+        "Wales and South West First-tier Tribunal (Social Security and Child Support) Daily Hearing List",
+    false, true),
+    SSCS_SCOTLAND_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+        SSCS_MIDLANDS_DAILY_HEARING_LIST,
+        "Scotland First-tier Tribunal (Social Security and Child Support) Daily Hearing List",
+        false, true),
+    SSCS_NORTH_EAST_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+        SSCS_MIDLANDS_DAILY_HEARING_LIST,
+        "North East First-tier Tribunal (Social Security and Child Support) Daily Hearing List",
+        false, true),
+    SSCS_NORTH_WEST_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+        SSCS_MIDLANDS_DAILY_HEARING_LIST,
+        "North West First-tier Tribunal (Social Security and Child Support) Daily Hearing List",
+        false, true),
+    SSCS_LONDON_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+        SSCS_MIDLANDS_DAILY_HEARING_LIST,
+        "London First-tier Tribunal (Social Security and Child Support) Daily Hearing List",
+        false, true);
+
     /**
      * Flag that represents the Location Type level the list displays at.
      */
