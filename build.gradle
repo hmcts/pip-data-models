@@ -20,7 +20,7 @@ publishing {
 }
 
 group = 'com.github.hmcts'
-version = '2.2.11'
+version = '2.2.14'
 
 java {
   toolchain {
@@ -155,5 +155,3 @@ task fortifyScan(type: JavaExec)  {
 wrapper {
     distributionType = Wrapper.DistributionType.ALL
 }
-
-
