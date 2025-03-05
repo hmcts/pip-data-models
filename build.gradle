@@ -155,5 +155,3 @@ task fortifyScan(type: JavaExec)  {
 wrapper {
     distributionType = Wrapper.DistributionType.ALL
 }
-
-
