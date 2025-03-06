@@ -24,7 +24,7 @@ public class AllSubscriptionMiData implements MiDataInterface {
     private UUID id;
     private Channel channel;
     private SearchType searchType;
-    private String userId;
+    private UUID userId;
     private String locationName;
     private LocalDateTime createdDate;
 
@@ -33,7 +33,7 @@ public class AllSubscriptionMiData implements MiDataInterface {
         @JsonProperty("id") UUID id,
         @JsonProperty("channel") Channel channel,
         @JsonProperty("searchType") SearchType searchType,
-        @JsonProperty("userId") String userId,
+        @JsonProperty("userId") UUID userId,
         @JsonProperty("locationName") String locationName,
         @JsonProperty("createdDate") LocalDateTime createdDate
     ) {
