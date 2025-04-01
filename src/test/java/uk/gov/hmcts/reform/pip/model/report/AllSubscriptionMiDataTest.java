@@ -20,7 +20,7 @@ class AllSubscriptionMiDataTest {
     private static final String LOCATION_NAME = "Location";
 
     private static final AllSubscriptionMiData ALL_SUBS_MI_RECORD = new AllSubscriptionMiData(
-        SUBSCRIPTION_ID, EMAIL_CHANNEL, SEARCH_TYPE, USER_ID.toString(), LOCATION_NAME, CREATED_DATE
+        SUBSCRIPTION_ID, EMAIL_CHANNEL, SEARCH_TYPE, USER_ID, LOCATION_NAME, CREATED_DATE
     );
 
     @Test

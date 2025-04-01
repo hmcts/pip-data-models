@@ -18,7 +18,7 @@ class LocationSubscriptionMiDataTest {
     private static final String LOCATION_NAME = "Location";
 
     private static final LocationSubscriptionMiData LOCATION_SUBS_MI_RECORD = new LocationSubscriptionMiData(
-        SUBSCRIPTION_ID, SEARCH_VALUE, EMAIL_CHANNEL, USER_ID.toString(), LOCATION_NAME, CREATED_DATE
+        SUBSCRIPTION_ID, SEARCH_VALUE, EMAIL_CHANNEL, USER_ID, LOCATION_NAME, CREATED_DATE
     );
 
     @Test
