@@ -26,11 +26,19 @@ public class Location {
 
     private List<String> jurisdiction;
 
+    private List<String> tribunalType;
+
+    private List<String> crimeType;
+
     private List<LocationReference> locationReferenceList = new ArrayList<>();
 
     private String welshName;
 
     private List<String> welshJurisdiction;
+
+    private List<String> welshTribunalType;
+
+    private List<String> welshCrimeType;
 
     private List<String> welshRegion;
 

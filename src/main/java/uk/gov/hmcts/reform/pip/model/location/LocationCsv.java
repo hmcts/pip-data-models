@@ -35,6 +35,14 @@ public class LocationCsv {
         column = "Jurisdiction")
     private List<String> jurisdiction = new ArrayList<>();
 
+    @CsvBindAndSplitByName(elementType = String.class, splitOn = DELIMITER, writeDelimiter = WRITE_DELIMITER,
+        column = "Tribunal Type")
+    private List<String> tribunalType = new ArrayList<>();
+
+    @CsvBindAndSplitByName(elementType = String.class, splitOn = DELIMITER, writeDelimiter = WRITE_DELIMITER,
+        column = "Crime Type")
+    private List<String> crimeType = new ArrayList<>();
+
     @CsvBindByName(column = "Provenance")
     private String provenance;
 
@@ -54,6 +62,14 @@ public class LocationCsv {
     @CsvBindAndSplitByName(elementType = String.class, splitOn = DELIMITER, writeDelimiter = WRITE_DELIMITER,
         column = "Welsh Jurisdiction")
     private List<String> welshJurisdiction = new ArrayList<>();
+
+    @CsvBindAndSplitByName(elementType = String.class, splitOn = DELIMITER, writeDelimiter = WRITE_DELIMITER,
+        column = "Welsh Tribunal Type")
+    private List<String> welshTribunalType = new ArrayList<>();
+
+    @CsvBindAndSplitByName(elementType = String.class, splitOn = DELIMITER, writeDelimiter = WRITE_DELIMITER,
+        column = "Welsh Crime Type")
+    private List<String> welshCrimeType = new ArrayList<>();
 
     @CsvBindByName(column = "Email")
     private String email;
