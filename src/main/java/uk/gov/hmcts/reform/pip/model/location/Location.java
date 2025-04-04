@@ -26,9 +26,7 @@ public class Location {
 
     private List<String> jurisdiction;
 
-    private List<String> tribunalType;
-
-    private List<String> crimeType;
+    private List<String> jurisdictionType;
 
     private List<LocationReference> locationReferenceList = new ArrayList<>();
 
@@ -36,9 +34,7 @@ public class Location {
 
     private List<String> welshJurisdiction;
 
-    private List<String> welshTribunalType;
-
-    private List<String> welshCrimeType;
+    private List<String> welshJurisdictionType;
 
     private List<String> welshRegion;
 
@@ -51,6 +47,7 @@ public class Location {
         this.name = locationCsv.getLocationName();
         this.region = new ArrayList<>(locationCsv.getRegion());
         this.jurisdiction = new ArrayList<>(locationCsv.getJurisdiction());
+        this.jurisdictionType = new ArrayList<>(locationCsv.getJurisdictionType());
         this.locationType = LocationType.valueOfCsv(locationCsv.getProvenanceLocationType());
         LocationReference locationReference = new LocationReference(
             locationCsv.getProvenance(),
@@ -60,6 +57,7 @@ public class Location {
         this.welshName = locationCsv.getWelshLocationName();
         this.welshRegion = new ArrayList<>(locationCsv.getWelshRegion());
         this.welshJurisdiction = new ArrayList<>(locationCsv.getWelshJurisdiction());
+        this.welshJurisdictionType = new ArrayList<>(locationCsv.getWelshJurisdictionType());
         this.email = locationCsv.getEmail();
         this.contactNo = locationCsv.getContactNo();
     }
