@@ -120,7 +120,7 @@ public enum ListType {
     false, true),
     SSCS_SCOTLAND_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
         SSCS_MIDLANDS_DAILY_HEARING_LIST,
-        "Scotland First-tier Social Security and Child Support Tribunal Daily Hearing List",
+        "Scotland Social Security and Child Support Tribunal Daily Hearing List",
         false, true),
     SSCS_NORTH_EAST_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
         SSCS_MIDLANDS_DAILY_HEARING_LIST,
