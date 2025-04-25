@@ -135,7 +135,9 @@ public enum ListType {
         "London Social Security and Child Support Tribunal Daily Hearing List",
         false, true),
     MENTAL_HEALTH_TRIBUNAL_HEARING_LIST(NATIONAL, PI_AAD, ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null,
-        "Mental Health Tribunal Daily Hearing List", true, false);
+        "Mental Health Tribunal Daily Hearing List", true, false),
+    INTERIM_APPLICATIONS_CHD_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES);
+
     /**
      * Flag that represents the Location Type level the list displays at.
      */
