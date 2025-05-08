@@ -136,7 +136,8 @@ public enum ListType {
         false, true),
     MENTAL_HEALTH_TRIBUNAL_HEARING_LIST(NATIONAL, PI_AAD, ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null,
         "Mental Health Tribunal Daily Hearing List", true, false),
-    INTERIM_APPLICATIONS_CHD_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
+    INTERIM_APPLICATIONS_CHD_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+                                              "Interim Applications List (ChD) Daily Cause List", false, false),
     COURT_OF_APPEAL_CIVIL_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
                                            "Court of Appeal (Civil Division) Daily Cause List", false, true);
 
