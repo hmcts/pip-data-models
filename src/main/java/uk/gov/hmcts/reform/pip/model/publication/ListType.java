@@ -134,8 +134,14 @@ public enum ListType {
         SSCS_MIDLANDS_DAILY_HEARING_LIST,
         "London Social Security and Child Support Tribunal Daily Hearing List",
         false, true),
-    MENTAL_HEALTH_TRIBUNAL_HEARING_LIST(NATIONAL, PI_AAD, ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null,
-        "Mental Health Tribunal Daily Hearing List", true, false);
+    BIRMINGHAM_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, PI_AAD, ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES,
+    null,"Birmingham Administrative Court Daily Cause List", true, false),
+    BRISTOL_AND_CARDIFF_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, PI_AAD, ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES,
+    null,"Bristol and Cardiff Administrative Court Daily Cause List", true, false),
+    MANCHESTER_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, PI_AAD, ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES,
+    null,"Manchester Administrative Court Daily Cause List", true, false),
+    LEEDS_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, PI_AAD, ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES,
+    null,"Leeds Administrative Court Daily Cause List", true, false);
     /**
      * Flag that represents the Location Type level the list displays at.
      */
