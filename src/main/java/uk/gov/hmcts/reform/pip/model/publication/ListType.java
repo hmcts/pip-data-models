@@ -155,7 +155,9 @@ public enum ListType {
                                          "King’s Bench Masters Daily Cause List", false, true),
     SENIOR_COURTS_COSTS_OFFICE_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     MAYOR_AND_CITY_CIVIL_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
-                                          "Mayor & City Civil Daily Cause List", false, true);
+                                          "Mayor & City Civil Daily Cause List", false, true),
+    INTERIM_APPLICATIONS_CHD_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+                  "Interim Applications List (ChD) Daily Cause List", false, true);
 
     /**
      * Flag that represents the Location Type level the list displays at.
