@@ -17,6 +17,7 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@SuppressWarnings("PMD.TooManyFields")
 public class LocationCsv {
     private static final String DELIMITER = ";(\\s)?";
     private static final String WRITE_DELIMITER = "; ";
@@ -34,6 +35,10 @@ public class LocationCsv {
     @CsvBindAndSplitByName(elementType = String.class, splitOn = DELIMITER, writeDelimiter = WRITE_DELIMITER,
         column = "Jurisdiction")
     private List<String> jurisdiction = new ArrayList<>();
+
+    @CsvBindAndSplitByName(elementType = String.class, splitOn = DELIMITER, writeDelimiter = WRITE_DELIMITER,
+        column = "Jurisdiction Type")
+    private List<String> jurisdictionType = new ArrayList<>();
 
     @CsvBindByName(column = "Provenance")
     private String provenance;
@@ -54,6 +59,10 @@ public class LocationCsv {
     @CsvBindAndSplitByName(elementType = String.class, splitOn = DELIMITER, writeDelimiter = WRITE_DELIMITER,
         column = "Welsh Jurisdiction")
     private List<String> welshJurisdiction = new ArrayList<>();
+
+    @CsvBindAndSplitByName(elementType = String.class, splitOn = DELIMITER, writeDelimiter = WRITE_DELIMITER,
+        column = "Welsh Jurisdiction Type")
+    private List<String> welshJurisdictionType = new ArrayList<>();
 
     @CsvBindByName(column = "Email")
     private String email;
