@@ -156,6 +156,61 @@ public enum ListType {
     SENIOR_COURTS_COSTS_OFFICE_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     MAYOR_AND_CITY_CIVIL_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
                                           "Mayor & City Civil Daily Cause List", false, true),
+    INTELLECTUAL_PROPERTY_AND_ENTERPRISE_COURT_DAILY_CAUSE_LIST(
+        NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Intellectual Property and Enterprise Court (ChD) Daily Cause List", false, true
+    ),
+    INTELLECTUAL_PROPERTY_LIST_CHD_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+                                                    "Intellectual Property List (ChD) Daily Cause List",
+                                                    false, true),
+    LONDON_CIRCUIT_COMMERCIAL_COURT_KB_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+                                                        "London Circuit Commercial Court (KB) Daily Cause List",
+                                                        false, true),
+    PATENTS_COURT_CHD_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+                                        "Patents Court (ChD) Daily Cause List", false, true),
+    PENSIONS_LIST_CHD_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+                                       "Pensions List (ChD) Daily Cause List", false, true),
+    PROPERTY_TRUSTS_PROBATE_LIST_CHD_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+                                                      "Property, Trusts and Probate List (ChD) Daily Cause List",
+                                                      false, true),
+    REVENUE_LIST_CHD_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+                                      "Revenue List (ChD) Daily Cause List", false, true),
+    TECHNOLOGY_AND_CONSTRUCTION_COURT_KB_DAILY_CAUSE_LIST(
+        NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Technology and Construction Court (KB) Daily Cause List", false, true
+    ),
+    ADMIRALTY_COURT_KB_DAILY_CAUSE_LIST(
+        NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Admiralty Court (KB) Daily Cause List", false, true
+    ),
+    BUSINESS_LIST_CHD_DAILY_CAUSE_LIST(
+        NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Business List (ChD) Daily Cause List", false, true
+    ),
+    CHANCERY_APPEALS_CHD_DAILY_CAUSE_LIST(
+        NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Chancery Appeals (ChD) Daily Cause List", false, true
+    ),
+    COMMERCIAL_COURT_KB_DAILY_CAUSE_LIST(
+        NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Commercial Court (KB) Daily Cause List", false, true
+    ),
+    COMPANIES_WINDING_UP_CHD_DAILY_CAUSE_LIST(
+        NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Companies Winding Up (ChD) Daily Cause List", false, true
+    ),
+    COMPETITION_LIST_CHD_DAILY_CAUSE_LIST(
+        NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Competition List (ChD) Daily Cause List", false, true
+    ),
+    FINANCIAL_LIST_CHD_KB_DAILY_CAUSE_LIST(
+        NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Financial List (ChD/KB) Daily Cause List", false, true
+    ),
+    INSOLVENCY_AND_COMPANIES_COURT_CHD_DAILY_CAUSE_LIST(
+        NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Insolvency & Companies Court (ChD) Daily Cause List", false, true
+    ),
     BIRMINGHAM_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, PI_AAD, ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES,
         null,"Birmingham Administrative Court Daily Cause List", true, false),
     BRISTOL_AND_CARDIFF_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, PI_AAD, ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES,
