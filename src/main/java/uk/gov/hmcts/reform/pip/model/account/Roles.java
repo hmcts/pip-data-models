@@ -25,6 +25,14 @@ public enum Roles {
     VERIFIED_THIRD_PARTY_ALL,
     SYSTEM_ADMIN;
 
+    public static final List<Roles> ALL_ADMINS = List.of(
+        INTERNAL_SUPER_ADMIN_CTSC,
+        INTERNAL_SUPER_ADMIN_LOCAL,
+        INTERNAL_ADMIN_CTSC,
+        INTERNAL_ADMIN_LOCAL,
+        SYSTEM_ADMIN
+    );
+
     public static final List<Roles> ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES = List.of(
         VERIFIED_THIRD_PARTY_CRIME,
         VERIFIED_THIRD_PARTY_CRIME_CFT,
