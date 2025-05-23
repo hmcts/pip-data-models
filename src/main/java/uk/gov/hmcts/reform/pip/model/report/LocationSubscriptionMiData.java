@@ -23,7 +23,7 @@ public class LocationSubscriptionMiData implements MiDataInterface {
     private UUID id;
     private String searchValue;
     private Channel channel;
-    private String userId;
+    private UUID userId;
     private String locationName;
     private LocalDateTime createdDate;
 
@@ -32,7 +32,7 @@ public class LocationSubscriptionMiData implements MiDataInterface {
         @JsonProperty("id") UUID id,
         @JsonProperty("searchValue") String searchValue,
         @JsonProperty("channel") Channel channel,
-        @JsonProperty("userId") String userId,
+        @JsonProperty("userId") UUID userId,
         @JsonProperty("locationName") String locationName,
         @JsonProperty("createdDate") LocalDateTime createdDate
     ) {
