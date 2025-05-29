@@ -24,7 +24,7 @@ jobs:
       - name: Get Release version
         run: |
           if [[ "${{ github.event_name }}" == "pull_request" ]]; then
-            VERSION="${{ github.ref_name }}-${{ steps.get_short_hash.outputs.hash }}"
+            VERSION="${{ github.head_ref }}-${{ steps.get_short_hash.outputs.hash }}"
           else
             VERSION="${{ github.ref_name }}"
           fi
