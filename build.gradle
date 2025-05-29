@@ -29,8 +29,10 @@ publishing {
   }
 }
 
+def buildNumber = System.getenv("RELEASE_VERSION")?: "DEV-SNAPSHOT"
+
 group = 'com.github.hmcts'
-version = '2.3.5'
+version = buildNumber
 
 java {
   toolchain {
