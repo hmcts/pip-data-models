@@ -1,4 +1,4 @@
-# pip-cron-trigger
+# pip-data-models
 
 ## Table of Contents
 
@@ -20,7 +20,7 @@
 
 This repository contains the models used throughout CaTH application.
 
-This project produces a single maven artefact, pushed up to jitpack, which is then used by other CaTH services.
+This project produces a single maven artefact, pushed up to Azure DevOps Artifacts, which is then used by other CaTH services.
 
 ## Getting Started
 
