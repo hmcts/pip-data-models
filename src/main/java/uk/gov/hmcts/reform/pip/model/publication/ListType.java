@@ -214,7 +214,11 @@ public enum ListType {
         "Insolvency & Companies Court (ChD) Daily Cause List", false, true
     ),
     COURT_OF_APPEAL_CIVIL_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
-                                           "Court of Appeal (Civil Division) Daily Cause List", false, true);
+                                           "Court of Appeal (Civil Division) Daily Cause List", false, true),
+    BIRMINGHAM_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
+    BRISTOL_AND_CARDIFF_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
+    MANCHESTER_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
+    LEEDS_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES);
 
     /**
      * Flag that represents the Location Type level the list displays at.
