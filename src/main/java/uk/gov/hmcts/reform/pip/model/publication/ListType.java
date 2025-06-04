@@ -74,7 +74,7 @@ public enum ListType {
         UT_IAC_JR_LEEDS_DAILY_HEARING_LIST,
         "Upper Tribunal (Immigration and Asylum) Chamber - Judicial Review: Birmingham Daily Hearing List",
         false, true),
-    UT_IAC_JR_BRISTOL_CARDIFF_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+    UT_IAC_JR_CARDIFF_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
          UT_IAC_JR_LEEDS_DAILY_HEARING_LIST,
         "Upper Tribunal (Immigration and Asylum) Chamber - Judicial Review: Bristol and Cardiff Daily Hearing List",
         false, true),
