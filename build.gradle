@@ -17,10 +17,22 @@ publishing {
       from components.java
     }
   }
+  repositories {
+    maven {
+      name = "AzureArtifacts"
+      url = uri("https://pkgs.dev.azure.com/hmcts/Artifacts/_packaging/hmcts-lib/maven/v1")
+      credentials {
+        username = System.getenv("AZURE_DEVOPS_ARTIFACT_USERNAME")
+        password = System.getenv("AZURE_DEVOPS_ARTIFACT_TOKEN")
+      }
+    }
+  }
 }
 
+def buildNumber = System.getenv("RELEASE_VERSION")?: "DEV-SNAPSHOT"
+
 group = 'com.github.hmcts'
-version = '2.3.9'
+version = buildNumber
 
 java {
   toolchain {
@@ -115,7 +127,9 @@ dependencyCheck {
 repositories {
   mavenLocal()
   mavenCentral()
-  maven { url 'https://jitpack.io' }
+  maven {
+    url 'https://pkgs.dev.azure.com/hmcts/Artifacts/_packaging/hmcts-lib/maven/v1'
+  }
 }
 
 ext {
@@ -138,7 +152,7 @@ dependencies {
   testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
   testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: spring
-  testImplementation group: 'com.github.hmcts', name: 'fortify-client', version: '1.4.8', classifier: 'all'
+  testImplementation group: 'com.github.hmcts', name: 'fortify-client', version: '1.4.9', classifier: 'all'
 }
 
 task fortifyScan(type: JavaExec)  {
