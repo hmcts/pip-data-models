@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public final class ListTypeHelper {
     private static final Set<String> ACRONYMS = Set.of("COP", "ET", "IAC", "SJP", "SSCS", "CIC", "CST", "PHT",
                                                        "GRC", "WPAFCC", "UT", "SIAC", "POAC", "PAAC", "FFT", "LR",
-                                                       "CC", "LC", "AAC", "RPT", "AST");
+                                                       "CC", "LC", "AAC", "RPT", "AST", "PCOL");
     private static final Set<String> CONJUNCTIONS = Set.of("and");
 
     private ListTypeHelper() {
