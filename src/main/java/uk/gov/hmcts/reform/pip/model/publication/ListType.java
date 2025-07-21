@@ -62,18 +62,21 @@ public enum ListType {
     WPAFCC_WEEKLY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     UT_IAC_JR_LONDON_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
         "Upper Tribunal (Immigration and Asylum) Chamber - Judicial Review: London Daily Hearing List",
-            false, true),
+        false, true),
+    UT_IAC_JR_LEEDS_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+       "Upper Tribunal (Immigration and Asylum) Chamber - Judicial Review: Leeds Daily Hearing List",
+       false, true),
     UT_IAC_JR_MANCHESTER_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-        UT_IAC_JR_LONDON_DAILY_HEARING_LIST,
+        UT_IAC_JR_LEEDS_DAILY_HEARING_LIST,
         "Upper Tribunal (Immigration and Asylum) Chamber - Judicial Review: Manchester Daily Hearing List",
         false, true),
     UT_IAC_JR_BIRMINGHAM_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-        UT_IAC_JR_LONDON_DAILY_HEARING_LIST,
+        UT_IAC_JR_LEEDS_DAILY_HEARING_LIST,
         "Upper Tribunal (Immigration and Asylum) Chamber - Judicial Review: Birmingham Daily Hearing List",
         false, true),
     UT_IAC_JR_CARDIFF_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-        UT_IAC_JR_LONDON_DAILY_HEARING_LIST,
-        "Upper Tribunal (Immigration and Asylum) Chamber - Judicial Review: Cardiff Daily Hearing List",
+         UT_IAC_JR_LEEDS_DAILY_HEARING_LIST,
+        "Upper Tribunal (Immigration and Asylum) Chamber - Judicial Review: Bristol and Cardiff Daily Hearing List",
         false, true),
     UT_IAC_STATUTORY_APPEALS_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     SIAC_WEEKLY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
@@ -156,6 +159,8 @@ public enum ListType {
     SENIOR_COURTS_COSTS_OFFICE_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     MAYOR_AND_CITY_CIVIL_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
                                           "Mayor & City Civil Daily Cause List", false, true),
+    INTERIM_APPLICATIONS_CHD_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+                  "Interim Applications List (ChD) Daily Cause List", false, true),
     INTELLECTUAL_PROPERTY_AND_ENTERPRISE_COURT_DAILY_CAUSE_LIST(
         NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
         "Intellectual Property and Enterprise Court (ChD) Daily Cause List", false, true
@@ -210,7 +215,15 @@ public enum ListType {
     INSOLVENCY_AND_COMPANIES_COURT_CHD_DAILY_CAUSE_LIST(
         NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
         "Insolvency & Companies Court (ChD) Daily Cause List", false, true
-    );
+    ),
+    COURT_OF_APPEAL_CIVIL_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+                                           "Court of Appeal (Civil Division) Daily Cause List", false, true),
+    BIRMINGHAM_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
+    BRISTOL_AND_CARDIFF_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
+    MANCHESTER_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
+    LEEDS_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
+    CIC_WEEKLY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
+    PCOL_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES);
 
     /**
      * Flag that represents the Location Type level the list displays at.

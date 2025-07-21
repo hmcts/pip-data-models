@@ -17,7 +17,6 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@SuppressWarnings("PMD.TooManyFields")
 public class LocationCsv {
     private static final String DELIMITER = ";(\\s)?";
     private static final String WRITE_DELIMITER = "; ";
