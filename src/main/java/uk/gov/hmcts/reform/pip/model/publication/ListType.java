@@ -225,7 +225,8 @@ public enum ListType {
     PCOL_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     SEND_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                             null, "First-tier Tribunal (Special Educational "
-                                + "Needs and Disability) Daily Hearing List", false, true);
+                                + "Needs and Disability) Daily Hearing List", false, true),
+    CIC_WEEKLY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES);
 
     /**
      * Flag that represents the Location Type level the list displays at.
