@@ -226,8 +226,11 @@ public enum ListType {
                             null, "First-tier Tribunal (Special Educational "
                                 + "Needs and Disability) Daily Hearing List", false, true),
     CIC_WEEKLY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
-    MAGISTRATES_ADULT_COURT_LIST_DAILY(VENUE, CRIME_IDAM, ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES),
-    MAGISTRATES_ADULT_COURT_LIST_FUTURE(VENUE, CRIME_IDAM, ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES);
+    MAGISTRATES_ADULT_COURT_LIST_DAILY(VENUE, CRIME_IDAM, ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, null,
+                                       "Magistrates Adult Court List - Daily", false, true),
+    MAGISTRATES_ADULT_COURT_LIST_FUTURE(VENUE, CRIME_IDAM, ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES,
+                                        MAGISTRATES_ADULT_COURT_LIST_DAILY, "Magistrates Adult Court List - Future",
+                                        false, true);
 
     /**
      * Flag that represents the Location Type level the list displays at.
