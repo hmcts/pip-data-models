@@ -174,11 +174,14 @@ public enum ListType {
                                         "Patents Court (ChD) Daily Cause List", false, true),
     PENSIONS_LIST_CHD_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
                                        "Pensions List (ChD) Daily Cause List", false, true),
-    PROPERTY_TRUSTS_PROBATE_LIST_CHD_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, PENSIONS_LIST_CHD_DAILY_CAUSE_LIST,
-                                                      "Property, Trusts and Probate List (ChD) Daily Cause List",
-                                                      false, true),
-    REVENUE_LIST_CHD_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, PENSIONS_LIST_CHD_DAILY_CAUSE_LIST,
-                                      "Revenue List (ChD) Daily Cause List", false, true),
+    PROPERTY_TRUSTS_PROBATE_LIST_CHD_DAILY_CAUSE_LIST(
+        NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, PENSIONS_LIST_CHD_DAILY_CAUSE_LIST,
+        "Property, Trusts and Probate List (ChD) Daily Cause List", false, true
+    ),
+    REVENUE_LIST_CHD_DAILY_CAUSE_LIST(
+        NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, PENSIONS_LIST_CHD_DAILY_CAUSE_LIST,
+        "Revenue List (ChD) Daily Cause List", false, true
+    ),
     TECHNOLOGY_AND_CONSTRUCTION_COURT_KB_DAILY_CAUSE_LIST(
         NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
         "Technology and Construction Court (KB) Daily Cause List", false, true
