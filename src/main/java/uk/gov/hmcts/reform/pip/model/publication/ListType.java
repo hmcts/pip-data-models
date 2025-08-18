@@ -225,7 +225,8 @@ public enum ListType {
     SEND_DAILY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                             null, "First-tier Tribunal (Special Educational "
                                 + "Needs and Disability) Daily Hearing List", false, true),
-    CIC_WEEKLY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES);
+    CIC_WEEKLY_HEARING_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
+    MAGISTRATES_PUBLIC_ADULT_COURT_LIST_DAILY(VENUE, CRIME_IDAM, ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES);
 
     /**
      * Flag that represents the Location Type level the list displays at.
