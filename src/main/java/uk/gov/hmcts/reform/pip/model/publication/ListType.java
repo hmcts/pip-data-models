@@ -232,7 +232,7 @@ public enum ListType {
                                         MAGISTRATES_ADULT_COURT_LIST_DAILY, "Magistrates Adult Court List - Future",
                                         false, true),
     MAGISTRATES_PUBLIC_ADULT_COURT_LIST_DAILY(VENUE, CRIME_IDAM,
-        ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, MAGISTRATES_ADULT_COURT_LIST_DAILY,
+        ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, null,
         "Magistrates Public Adult Court List - Daily", false, true);
 
     /**
