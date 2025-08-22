@@ -135,7 +135,7 @@ repositories {
 
 ext {
   log4JVersion = '2.25.1'
-  spring = '3.4.7'
+  spring = '3.4.8'
 }
 
 dependencies {
