@@ -230,7 +230,10 @@ public enum ListType {
                                        "Magistrates Adult Court List - Daily", false, true),
     MAGISTRATES_ADULT_COURT_LIST_FUTURE(VENUE, CRIME_IDAM, ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES,
                                         MAGISTRATES_ADULT_COURT_LIST_DAILY, "Magistrates Adult Court List - Future",
-                                        false, true);
+                                        false, true),
+    CROWN_DAILY_PDDA_LIST(VENUE, CRIME_IDAM, ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES),
+    CROWN_FIRM_PDDA_LIST(VENUE, CRIME_IDAM, ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES),
+    CROWN_WARNED_PDDA_LIST(VENUE, CRIME_IDAM, ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES);
 
     /**
      * Flag that represents the Location Type level the list displays at.
