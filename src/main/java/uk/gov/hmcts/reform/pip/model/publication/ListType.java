@@ -233,7 +233,7 @@ public enum ListType {
                                         false, true),
     MAGISTRATES_PUBLIC_ADULT_COURT_LIST_DAILY(VENUE, CRIME_IDAM,
         ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, null,
-        "Magistrates Public Adult Court List - Daily", false, true).
+        "Magistrates Public Adult Court List - Daily", false, true),
     CROWN_DAILY_PDDA_LIST(VENUE, CRIME_IDAM, ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES),
     CROWN_FIRM_PDDA_LIST(VENUE, CRIME_IDAM, ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES),
     CROWN_WARNED_PDDA_LIST(VENUE, CRIME_IDAM, ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES);
