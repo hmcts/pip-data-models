@@ -153,7 +153,7 @@ dependencies {
   testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
   testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: spring
-  testImplementation group: 'com.github.hmcts', name: 'fortify-client', version: '1.4.9', classifier: 'all'
+  testImplementation group: 'com.github.hmcts', name: 'fortify-client', version: '1.4.10', classifier: 'all'
 }
 
 tasks.register('fortifyScan', JavaExec) {
