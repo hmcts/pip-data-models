@@ -3,7 +3,6 @@ package uk.gov.hmcts.reform.pip.model.publication;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static uk.gov.hmcts.reform.pip.model.publication.ListType.CIC_DAILY_HEARING_LIST;
 import static uk.gov.hmcts.reform.pip.model.publication.ListType.CIVIL_AND_FAMILY_DAILY_CAUSE_LIST;
 import static uk.gov.hmcts.reform.pip.model.publication.ListType.COP_DAILY_CAUSE_LIST;
 import static uk.gov.hmcts.reform.pip.model.publication.ListType.MAGISTRATES_PUBLIC_LIST;
@@ -11,7 +10,6 @@ import static uk.gov.hmcts.reform.pip.model.publication.ListType.SSCS_DAILY_LIST
 
 class ListTypeTest {
     private static final String LIST_TYPE_NAME_MESSAGE = "List type name does not match";
-    private static final String LIST_TYPE_DEPRECATED_MESSAGE = "List type deprecation flag does not match";
 
     @Test
     void testStandardListTypeFriendlyName() {
@@ -40,19 +38,4 @@ class ListTypeTest {
             .as(LIST_TYPE_NAME_MESSAGE)
             .isEqualTo("SSCS Daily List - Additional Hearings");
     }
-
-    @Test
-    void testListTypeWithDeprecatedAsFalse() {
-        assertThat(SSCS_DAILY_LIST_ADDITIONAL_HEARINGS.isDeprecated())
-            .as(LIST_TYPE_DEPRECATED_MESSAGE)
-            .isFalse();
-    }
-
-    @Test
-    void testListTypeWithDeprecatedAsTrue() {
-        assertThat(CIC_DAILY_HEARING_LIST.isDeprecated())
-            .as(LIST_TYPE_DEPRECATED_MESSAGE)
-            .isTrue();
-    }
-
 }
