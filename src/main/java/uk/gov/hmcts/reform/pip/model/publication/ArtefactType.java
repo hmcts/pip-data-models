@@ -6,5 +6,6 @@ package uk.gov.hmcts.reform.pip.model.publication;
 public enum ArtefactType {
     LIST,
     JUDGEMENTS_AND_OUTCOMES,
-    GENERAL_PUBLICATION
+    GENERAL_PUBLICATION,
+    LCSU
 }
