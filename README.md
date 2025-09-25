@@ -62,7 +62,7 @@ Publishing to Azure DevOps Artefacts is done automatically on Pull Request, and 
 
 When a pull request is first created, or when a commit is made to it, a new artefact is created in the artefact store. The name of this is in the format of "BranchName-CommitHash"
 
-This version can then be used in the associated PR's in other microservices for testing
+This version can then be used in the associated PR's in other microservices for testing.
 
 Once the PR has been merged, a release should be created with a tag set to the new version. This tag will become the dependency version, e.g. 2.3.5.
 
