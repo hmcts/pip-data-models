@@ -205,7 +205,7 @@ public enum ListType {
     HIGH_COURT_FAMILY_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                 "High Court Family Daily Cause List"),
     BUSINESS_AND_PROPERTY_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                  "Business and Property Daily Cause List"),
+                                  "Business & Property Daily Cause List"),
     CIRCUIT_COMMERCIAL_COURT_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                       "Circuit Commercial Court Daily Cause List"),
     TECHNOLOGY_AND_CONSTRUCTION_COURT_DAILY_CAUSE_LIST(NATIONAL, CFT_IDAM, ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
