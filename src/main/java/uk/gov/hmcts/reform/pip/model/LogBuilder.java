@@ -11,8 +11,8 @@ public final class LogBuilder {
 
     }
 
-    public static String writeLog(String actioningUserEmail, UserActions userAction, String actionValue) {
-        return String.format("Track: %s, %s %s, at %s", actioningUserEmail, userAction.actionLog, actionValue,
+    public static String writeLog(UUID actioningUserId, UserActions userAction, String actionValue) {
+        return String.format("Track: %s, %s %s, at %s", actioningUserId, userAction.actionLog, actionValue,
                              LocalDateTime.now());
     }
 
