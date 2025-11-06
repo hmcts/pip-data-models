@@ -154,6 +154,7 @@ dependencies {
 
   testImplementation "org.springframework.boot:spring-boot-starter-test:${spring}"
   testImplementation "com.github.hmcts:fortify-client:1.4.10:all"
+  implementation 'org.apache.commons:commons-lang3:3.19.0'
 }
 
 tasks.register('fortifyScan', JavaExec) {
