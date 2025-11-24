@@ -12,13 +12,12 @@ import static uk.gov.hmcts.reform.pip.model.LogBuilder.writeLog;
 class LogBuilderTest {
 
     private static final UUID USER_UUID = UUID.randomUUID();
-    private static final String USER_EMAIL = "bob@test.com";
     private static final UserActions USER_ACTION = UserActions.UPLOAD;
     private static final String ACTION_VALUE = "testFile.pdf";
     private static final LocalDateTime NOW = LocalDateTime.now();
     private static final String TEST_MESSAGE = "Returned String should match with date trimmed for testing purposes";
 
-    private static final String RETURNED_STRING = String.format("Track: %s, %s %s, at %s", USER_EMAIL,
+    private static final String RETURNED_STRING = String.format("Track: %s, %s %s, at %s", USER_UUID,
                                                                 USER_ACTION.actionLog, ACTION_VALUE, NOW);
 
     private static final String RETURNED_STRING_NO_EMAIL = String.format("Track: %s %s, at %s",
@@ -33,7 +32,7 @@ class LogBuilderTest {
     @Test
     void testWriteLog() {
         assertEquals(RETURNED_STRING.substring(0, RETURNED_STRING.length() - 10),
-                     writeLog(USER_EMAIL, USER_ACTION, ACTION_VALUE).substring(0, RETURNED_STRING.length() - 10),
+                     writeLog(USER_UUID, USER_ACTION, ACTION_VALUE).substring(0, RETURNED_STRING.length() - 10),
                      TEST_MESSAGE);
     }
 
