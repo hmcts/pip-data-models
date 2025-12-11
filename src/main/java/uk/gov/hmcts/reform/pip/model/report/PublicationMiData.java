@@ -20,7 +20,6 @@ import static uk.gov.hmcts.reform.pip.model.report.MiDataInterface.formatDateTim
 @Getter
 @Setter
 @EqualsAndHashCode
-@SuppressWarnings("PMD.ExcessiveParameterList")
 @NoArgsConstructor
 public class PublicationMiData implements MiDataInterface {
 

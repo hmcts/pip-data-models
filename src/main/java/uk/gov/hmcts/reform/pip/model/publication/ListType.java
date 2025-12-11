@@ -25,7 +25,6 @@ import static uk.gov.hmcts.reform.pip.model.location.LocationType.VENUE;
  */
 @Getter
 @AllArgsConstructor
-@SuppressWarnings("PMD.ExcessivePublicCount")
 public enum ListType {
     SJP_PUBLIC_LIST(NATIONAL, PI_AAD, ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null,
                     "SJP Public List (Full list)", true, false, false),
@@ -242,7 +241,6 @@ public enum ListType {
     private boolean hasExcel;
 
     @Accessors(fluent = true)
-    @SuppressWarnings("PMD.ImmutableField")
     private boolean hasAdditionalPdf = true;
 
     /**
