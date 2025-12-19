@@ -1,0 +1,28 @@
+#!groovy
+
+@Library("Infrastructure")
+
+def type = "java"
+def product = "pip"
+def component = "data-management"
+
+withPipeline(type, product, component) {
+
+  onMaster() {
+    env.ENV = 'stg'
+  }
+  onPR() {
+    env.ENV = 'dev'
+  }
+  onDemo {
+    env.ENV = 'demo'
+  }
+  onPerftest {
+    env.ENV = 'perftest'
+  }
+  onIthc {
+    env.ENV = 'ithc'
+  }
+
+  disableLegacyDeployment()
+}
