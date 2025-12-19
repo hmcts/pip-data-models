@@ -129,7 +129,7 @@ dependencies {
 
   implementation "org.apache.logging.log4j:log4j-api:${log4JVersion}"
   implementation "org.apache.logging.log4j:log4j-to-slf4j:${log4JVersion}"
-  implementation 'org.eclipse.angus:angus-activation:2.0.1'
+  implementation 'org.eclipse.angus:angus-activation:2.0.3'
 
   implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.20.1"
   implementation "com.opencsv:opencsv:5.12.0"
