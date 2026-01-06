@@ -13,7 +13,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ThirdPartySubscription {
-    List<ApiOauthConfiguration> apiOauthConfigurationList;
-    UUID publicationArtefactId;
+    List<ThirdPartyOauthConfiguration> thirdPartyOauthConfigurationList;
+    UUID publicationId;
     ThirdPartyAction thirdPartyAction;
 }
