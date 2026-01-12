@@ -11,7 +11,7 @@ import uk.gov.hmcts.reform.pip.model.publication.Artefact;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ThirdPartySubscriptionArtefact {
+public class LegacyThirdPartySubscriptionArtefact {
     @NotNull
     String apiDestination;
 

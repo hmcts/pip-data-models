@@ -12,7 +12,7 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ThirdPartySubscription {
+public class LegacyThirdPartySubscription {
     @NotNull
     String apiDestination;
 
