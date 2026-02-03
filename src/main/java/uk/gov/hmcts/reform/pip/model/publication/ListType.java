@@ -30,7 +30,7 @@ public enum ListType {
                     "SJP Public List (Full list)", true, false, false),
     SJP_DELTA_PUBLIC_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, SJP_PUBLIC_LIST,
                           "SJP Public List (New cases)", true, false, false),
-    SJP_PRESS_LIST(NATIONAL,List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null,
+    SJP_PRESS_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null,
                    "SJP Press List (Full list)", true, false, false),
     SJP_DELTA_PRESS_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, SJP_PRESS_LIST,
                          "SJP Press List (New cases)", true, false, false),
