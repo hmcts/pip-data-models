@@ -10,7 +10,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ThirdPartyOauthConfiguration {
-    private String name;
+    private String userId;
     private String destinationUrl;
     private String tokenUrl;
     private String clientIdKey;
