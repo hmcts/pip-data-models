@@ -16,5 +16,4 @@ public class ThirdPartySubscription {
     List<ThirdPartyOauthConfiguration> thirdPartyOauthConfigurationList;
     UUID publicationId;
     ThirdPartyAction thirdPartyAction;
-    boolean healthCheck = false;
 }
