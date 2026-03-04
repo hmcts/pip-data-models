@@ -250,7 +250,7 @@ public enum ListType {
 
     /**
      * Flag to indicate whether subscription is triggered immediately after upload, or if it is triggered by a
-     * scheduled task at a later time
+     * scheduled task at a later time.
      */
     private boolean triggerSubscriptionFromUpload = true;
 
