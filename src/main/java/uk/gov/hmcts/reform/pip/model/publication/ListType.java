@@ -27,19 +27,19 @@ import static uk.gov.hmcts.reform.pip.model.location.LocationType.VENUE;
 @AllArgsConstructor
 public enum ListType {
     SJP_PUBLIC_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null,
-                    "SJP Public List (Full list)", true, false, false),
+                    "SJP Public List (Full list)", true, false, false, false),
     SJP_DELTA_PUBLIC_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, SJP_PUBLIC_LIST,
-                          "SJP Public List (New cases)", true, false, false),
+                          "SJP Public List (New cases)", true, false, false, false),
     SJP_PRESS_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null,
-                   "SJP Press List (Full list)", true, false, false),
+                   "SJP Press List (Full list)", true, false, false, false),
     SJP_DELTA_PRESS_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, SJP_PRESS_LIST,
-                         "SJP Press List (New cases)", true, false, false),
+                         "SJP Press List (New cases)", true, false, false, false),
     SJP_PRESS_REGISTER(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES),
     CROWN_DAILY_LIST(VENUE, List.of(CRIME_IDAM), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, true),
     CROWN_FIRM_LIST(VENUE, List.of(CRIME_IDAM), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, true),
     CROWN_WARNED_LIST(VENUE, List.of(CRIME_IDAM), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, true),
-    MAGISTRATES_PUBLIC_LIST(VENUE, List.of(CRIME_IDAM), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES),
-    MAGISTRATES_STANDARD_LIST(VENUE, List.of(CRIME_IDAM), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES),
+    MAGISTRATES_PUBLIC_LIST(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES),
+    MAGISTRATES_STANDARD_LIST(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES),
     CIVIL_DAILY_CAUSE_LIST(VENUE, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     FAMILY_DAILY_CAUSE_LIST(VENUE, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     CIVIL_AND_FAMILY_DAILY_CAUSE_LIST(VENUE, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
@@ -121,7 +121,7 @@ public enum ListType {
         SSCS_MIDLANDS_DAILY_HEARING_LIST,
         "London Social Security and Child Support Tribunal Daily Hearing List"),
     MENTAL_HEALTH_TRIBUNAL_HEARING_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null,
-        "Mental Health Tribunal Daily Hearing List", true, false, false),
+        "Mental Health Tribunal Daily Hearing List", true, false, false, false),
     LONDON_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     COUNTY_COURT_LONDON_CIVIL_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                                "County Court at Central London Civil Daily Cause List"),
@@ -192,13 +192,13 @@ public enum ListType {
     SEND_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                             "First-tier Tribunal (Special Educational Needs and Disability) Daily Hearing List"),
     CIC_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
-    MAGISTRATES_ADULT_COURT_LIST_DAILY(VENUE, List.of(CRIME_IDAM), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES,
-                                       "Magistrates Adult Court List - Daily"),
-    MAGISTRATES_ADULT_COURT_LIST_FUTURE(VENUE, List.of(CRIME_IDAM), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES,
+    MAGISTRATES_ADULT_COURT_LIST_DAILY(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES,
+                                       "Magistrates Adult Court List - Daily", true),
+    MAGISTRATES_ADULT_COURT_LIST_FUTURE(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES,
                                         MAGISTRATES_ADULT_COURT_LIST_DAILY, "Magistrates Adult Court List - Future"),
-    MAGISTRATES_PUBLIC_ADULT_COURT_LIST_DAILY(VENUE, List.of(CRIME_IDAM),
-        ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, "Magistrates Public Adult Court List - Daily"),
-    MAGISTRATES_PUBLIC_ADULT_COURT_LIST_FUTURE(VENUE, List.of(CRIME_IDAM), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES,
+    MAGISTRATES_PUBLIC_ADULT_COURT_LIST_DAILY(VENUE, List.of(CRIME_IDAM, PI_AAD),
+        ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, "Magistrates Public Adult Court List - Daily", true),
+    MAGISTRATES_PUBLIC_ADULT_COURT_LIST_FUTURE(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES,
         MAGISTRATES_PUBLIC_ADULT_COURT_LIST_DAILY,"Magistrates Public Adult Court List - Future"),
     CROWN_DAILY_PDDA_LIST(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES,
                           "Crown Daily List"),
@@ -249,6 +249,11 @@ public enum ListType {
     private boolean hasAdditionalPdf = true;
 
     /**
+     * Flag to indicate whether subscription is triggered by a scheduled job, or by an upload of a publication.
+     */
+    private boolean isScheduledSubscription;
+
+    /**
      * Flag to indicate whether the list type is deprecated and no longer in use.
      */
     private boolean isDeprecated;
@@ -270,6 +275,12 @@ public enum ListType {
              List<Roles> allowedThirdPartyRoles, String friendlyName) {
         this(listLocationLevel, allowedProvenances, allowedThirdPartyRoles);
         this.friendlyName = friendlyName;
+    }
+
+    ListType(LocationType listLocationLevel, List<UserProvenances> allowedProvenances,
+             List<Roles> allowedThirdPartyRoles, String friendlyName, boolean isScheduledSubscription) {
+        this(listLocationLevel, allowedProvenances, allowedThirdPartyRoles, friendlyName);
+        this.isScheduledSubscription = isScheduledSubscription;
     }
 
     ListType(LocationType listLocationLevel, List<UserProvenances> allowedProvenances,
