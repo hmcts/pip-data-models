@@ -5,16 +5,17 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import uk.gov.hmcts.reform.pip.model.publication.Artefact;
+
+import java.util.UUID;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-public class ThirdPartySubscriptionArtefact {
+@AllArgsConstructor
+public class LegacyThirdPartySubscription {
     @NotNull
     String apiDestination;
 
     @NotNull
-    Artefact artefact;
+    UUID artefactId;
 }
