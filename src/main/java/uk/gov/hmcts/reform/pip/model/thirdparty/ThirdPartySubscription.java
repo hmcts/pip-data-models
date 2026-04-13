@@ -1,11 +1,11 @@
-package uk.gov.hmcts.reform.pip.model.subscription;
+package uk.gov.hmcts.reform.pip.model.thirdparty;
 
-import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
 import java.util.UUID;
 
 @Getter
@@ -13,9 +13,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ThirdPartySubscription {
-    @NotNull
-    String apiDestination;
-
-    @NotNull
-    UUID artefactId;
+    List<ThirdPartyOauthConfiguration> thirdPartyOauthConfigurationList;
+    UUID publicationId;
+    ThirdPartyAction thirdPartyAction;
 }
