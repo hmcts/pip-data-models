@@ -15,113 +15,43 @@
     <cve>CVE-2026-34481</cve>
   </suppress>
   <suppress>
-    <notes>spring-aop-7.0.5.jar</notes>
+    <notes>
+      spring-aop-7.0.5.jar,
+      spring-beans-7.0.5.jar,
+      spring-context-7.0.5.jar,
+      spring-core-7.0.5.jar,
+      spring-expression-7.0.5.jar,
+      spring-web-7.0.5.jar,
+      spring-webmvc-7.0.5.jar
+    </notes>
     <cve>CVE-2026-22737</cve>
     <cve>CVE-2026-22735</cve>
   </suppress>
   <suppress>
-    <notes>spring-beans-7.0.5.jar</notes>
-    <cve>CVE-2026-22737</cve>
-    <cve>CVE-2026-22735</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-boot-4.0.3.jar</notes>
+    <notes>
+      spring-boot-4.0.3.jar,
+      spring-boot-autoconfigure-4.0.3.jar,
+      spring-boot-http-converter-4.0.3.jar,
+      spring-boot-jackson-4.0.3.jar,
+      spring-boot-servlet-4.0.3.jar,
+      spring-boot-starter-logging-4.0.3.jar,
+      spring-boot-validation-4.0.3.jar,
+      spring-boot-web-server-4.0.3.jar,
+      spring-boot-webmvc-4.0.3.jar
+    </notes>
     <cve>CVE-2026-22733</cve>
   </suppress>
   <suppress>
-    <notes>spring-boot-autoconfigure-4.0.3.jar</notes>
-    <cve>CVE-2026-22733</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-boot-http-converter-4.0.3.jar</notes>
-    <cve>CVE-2026-22733</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-boot-jackson-4.0.3.jar</notes>
-    <cve>CVE-2026-22733</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-boot-servlet-4.0.3.jar</notes>
-    <cve>CVE-2026-22733</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-boot-starter-4.0.3.jar</notes>
-    <cve>CVE-2026-22733</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-boot-starter-logging-4.0.3.jar</notes>
-    <cve>CVE-2026-22733</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-boot-validation-4.0.3.jar</notes>
-    <cve>CVE-2026-22733</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-boot-web-server-4.0.3.jar</notes>
-    <cve>CVE-2026-22733</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-boot-webmvc-4.0.3.jar</notes>
-    <cve>CVE-2026-22733</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-context-7.0.5.jar</notes>
-    <cve>CVE-2026-22737</cve>
-    <cve>CVE-2026-22735</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-core-7.0.5.jar</notes>
-    <cve>CVE-2026-22737</cve>
-    <cve>CVE-2026-22735</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-expression-7.0.5.jar</notes>
-    <cve>CVE-2026-22737</cve>
-    <cve>CVE-2026-22735</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-security-config-6.5.9.jar</notes>
+    <notes>
+      spring-security-config-6.5.9.jar,
+      spring-security-core-6.5.9.jar,
+      spring-security-crypto-6.5.9.jar,
+      spring-security-oauth2-client-6.5.9.jar,
+      spring-security-oauth2-core-6.5.9.jar,
+      spring-security-oauth2-jose-6.5.9.jar,
+      spring-security-web-6.5.9.jar
+    </notes>
     <cve>CVE-2026-22748</cve>
     <cve>CVE-2026-22746</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-security-core-6.5.9.jar</notes>
-    <cve>CVE-2026-22748</cve>
-    <cve>CVE-2026-22746</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-security-crypto-6.5.9.jar</notes>
-    <cve>CVE-2026-22748</cve>
-    <cve>CVE-2026-22746</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-security-oauth2-client-6.5.9.jar</notes>
-    <cve>CVE-2026-22748</cve>
-    <cve>CVE-2026-22746</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-security-oauth2-core-6.5.9.jar</notes>
-    <cve>CVE-2026-22748</cve>
-    <cve>CVE-2026-22746</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-security-oauth2-jose-6.5.9.jar</notes>
-    <cve>CVE-2026-22748</cve>
-    <cve>CVE-2026-22746</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-security-web-6.5.9.jar</notes>
-    <cve>CVE-2026-22748</cve>
-    <cve>CVE-2026-22746</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-web-7.0.5.jar</notes>
-    <cve>CVE-2026-22737</cve>
-    <cve>CVE-2026-22735</cve>
-  </suppress>
-  <suppress>
-    <notes>spring-webmvc-7.0.5.jar</notes>
-    <cve>CVE-2026-22737</cve>
-    <cve>CVE-2026-22735</cve>
   </suppress>
 </suppressions>
