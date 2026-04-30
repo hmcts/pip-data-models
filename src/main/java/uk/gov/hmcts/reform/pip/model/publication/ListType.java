@@ -11,6 +11,7 @@ import uk.gov.hmcts.reform.pip.model.publication.helpers.ListTypeHelper;
 import java.util.List;
 
 import static uk.gov.hmcts.reform.pip.model.account.Roles.ALL_VERIFIED_THIRD_PARTY_CFT_ROLES;
+import static uk.gov.hmcts.reform.pip.model.account.Roles.ALL_VERIFIED_THIRD_PARTY_CRIME_AND_LEGACY_ROLES;
 import static uk.gov.hmcts.reform.pip.model.account.Roles.ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES;
 import static uk.gov.hmcts.reform.pip.model.account.Roles.ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES;
 import static uk.gov.hmcts.reform.pip.model.account.UserProvenances.CFT_IDAM;
@@ -202,9 +203,9 @@ public enum ListType {
         MAGISTRATES_PUBLIC_ADULT_COURT_LIST_DAILY,"Magistrates Public Adult Court List - Future"),
     CROWN_DAILY_PDDA_LIST(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES,
                           "Crown Daily List"),
-    CROWN_FIRM_PDDA_LIST(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES,
+    CROWN_FIRM_PDDA_LIST(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_AND_LEGACY_ROLES,
                          "Crown Firm List"),
-    CROWN_WARNED_PDDA_LIST(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES,
+    CROWN_WARNED_PDDA_LIST(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_AND_LEGACY_ROLES,
                            "Crown Warned List"),
     HIGH_COURT_CIVIL_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                "High Court Civil Daily Cause List"),

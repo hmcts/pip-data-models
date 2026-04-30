@@ -40,6 +40,14 @@ public enum Roles {
         VERIFIED_THIRD_PARTY_ALL
     );
 
+    public static final List<Roles> ALL_VERIFIED_THIRD_PARTY_CRIME_AND_LEGACY_ROLES = List.of(
+        VERIFIED_THIRD_PARTY_CRIME,
+        VERIFIED_THIRD_PARTY_CRIME_CFT,
+        VERIFIED_THIRD_PARTY_CRIME_PRESS,
+        VERIFIED_THIRD_PARTY_ALL,
+        GENERAL_THIRD_PARTY
+    );
+
     public static final List<Roles> ALL_VERIFIED_THIRD_PARTY_CFT_ROLES = List.of(
         VERIFIED_THIRD_PARTY_CFT,
         VERIFIED_THIRD_PARTY_CRIME_CFT,
