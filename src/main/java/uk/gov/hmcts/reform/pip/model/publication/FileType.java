@@ -10,7 +10,8 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum FileType {
     EXCEL(".xlsx"),
-    PDF(".pdf");
+    PDF(".pdf"),
+    CSV(".csv");
 
     private final String extension;
 }
