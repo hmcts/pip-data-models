@@ -28,13 +28,13 @@ import static uk.gov.hmcts.reform.pip.model.location.LocationType.VENUE;
 @AllArgsConstructor
 public enum ListType {
     SJP_PUBLIC_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null,
-                    "SJP Public List (Full list)", true, false, false, false),
+                    "SJP Public List (Full list)", true, false, false, false, false),
     SJP_DELTA_PUBLIC_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, SJP_PUBLIC_LIST,
-                          "SJP Public List (New cases)", true, false, false, false),
+                          "SJP Public List (New cases)", true, false, false, false, false),
     SJP_PRESS_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null,
-                   "SJP Press List (Full list)", true, false, false, false),
+                   "SJP Press List (Full list)", true, false, false, false, false),
     SJP_DELTA_PRESS_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, SJP_PRESS_LIST,
-                         "SJP Press List (New cases)", true, false, false, false),
+                         "SJP Press List (New cases)", true, false, false, false, false),
     SJP_PRESS_REGISTER(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES),
     CROWN_DAILY_LIST(VENUE, List.of(CRIME_IDAM), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, true),
     CROWN_FIRM_LIST(VENUE, List.of(CRIME_IDAM), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, true),
@@ -53,7 +53,8 @@ public enum ListType {
     IAC_DAILY_LIST(VENUE, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     IAC_DAILY_LIST_ADDITIONAL_CASES(VENUE, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                     IAC_DAILY_LIST, "IAC Daily List - Additional Cases"),
-    CARE_STANDARDS_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, true),
+    CARE_STANDARDS_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null, "Care Standards Tribunal Weekly Hearing List",
+                        true, false, true, false, false),
     PRIMARY_HEALTH_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, true),
     CIC_DAILY_HEARING_LIST(VENUE, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, true),
     CST_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
@@ -122,7 +123,7 @@ public enum ListType {
         SSCS_MIDLANDS_DAILY_HEARING_LIST,
         "London Social Security and Child Support Tribunal Daily Hearing List"),
     MENTAL_HEALTH_TRIBUNAL_HEARING_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null,
-        "Mental Health Tribunal Daily Hearing List", true, false, false, false),
+        "Mental Health Tribunal Daily Hearing List", true, false, false, false, false),
     LONDON_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     COUNTY_COURT_LONDON_CIVIL_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                                "County Court at Central London Civil Daily Cause List"),
@@ -248,6 +249,9 @@ public enum ListType {
 
     @Accessors(fluent = true)
     private boolean hasAdditionalPdf = true;
+
+    @Accessors(fluent = true)
+    private boolean hasCsv = true;
 
     /**
      * Flag to indicate whether subscription is triggered by a scheduled job, or by an upload of a publication.
