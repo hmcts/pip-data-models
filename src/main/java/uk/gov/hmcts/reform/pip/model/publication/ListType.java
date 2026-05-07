@@ -250,8 +250,8 @@ public enum ListType {
     @Accessors(fluent = true)
     private boolean hasAdditionalPdf = true;
 
-    @Accessors(fluent = true)
-    private boolean hasCsv = true;
+    @Accessors(fluent = false)
+    private boolean hasCsv = false;
 
     /**
      * Flag to indicate whether subscription is triggered by a scheduled job, or by an upload of a publication.
