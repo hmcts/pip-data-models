@@ -101,4 +101,9 @@ public class Artefact {
      * A counter to show how many times the artefact has been superseded. Default is 0.
      */
     private int supersededCount;
+
+    /* *
+     * A list of case information associated with the artefact.
+     */
+    private List<ArtefactCaseInfo> caseInfo;
 }
