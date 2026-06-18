@@ -105,5 +105,5 @@ public class Artefact {
     /* *
      * A list of case information associated with the artefact.
      */
-    private List<ArtefactCaseInfo> caseInfo;
+    private List<ArtefactCaseInfo> caseInfoList;
 }
