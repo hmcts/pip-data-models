@@ -16,7 +16,10 @@ public enum UserActions {
     DELETE_MEDIA_APPLICATION("Delete media application"),
     ADD_LOCATION_METADATA("Add location metadata"),
     DELETE_LOCATION_METADATA("Delete location metadata"),
-    UPDATE_LOCATION_METADATA("Update location metadata");
+    UPDATE_LOCATION_METADATA("Update location metadata"),
+    ADD_LIST_SEARCH_CONFIG("Add list search config"),
+    DELETE_LIST_SEARCH_CONFIG("Delete list search config"),
+    UPDATE_LIST_SEARCH_CONFIG("Update list search config");
 
     public final String actionLog;
 
