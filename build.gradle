@@ -1,12 +1,12 @@
 plugins {
   id 'java-library'
-  id 'uk.gov.hmcts.java' version '0.12.68'
+  id 'uk.gov.hmcts.java' version '0.12.70'
   id 'checkstyle'
   id 'jacoco'
   id 'io.spring.dependency-management' version '1.1.7'
   id 'org.owasp.dependencycheck' version '12.2.1'
   id 'com.github.ben-manes.versions' version '0.54.0'
-  id 'org.sonarqube' version '7.3.0.8198'
+  id 'org.sonarqube' version '7.3.1.8318'
   id 'io.freefair.lombok' version '9.5.0'
   id 'maven-publish'
 }
@@ -117,7 +117,7 @@ repositories {
 }
 
 ext {
-  log4JVersion = '2.25.4'
+  log4JVersion = '2.26.0'
   spring = '4.0.0'
 }
 
@@ -125,13 +125,13 @@ dependencies {
   implementation "org.springframework.boot:spring-boot-starter-json:${spring}"
   implementation "org.springframework.boot:spring-boot-starter-data-jpa:${spring}"
   implementation "org.springframework.boot:spring-boot-starter-oauth2-client:${spring}"
-  implementation "org.springdoc:springdoc-openapi-starter-webmvc-ui:3.0.2"
+  implementation "org.springdoc:springdoc-openapi-starter-webmvc-ui:3.0.3"
 
   implementation "org.apache.logging.log4j:log4j-api:${log4JVersion}"
   implementation "org.apache.logging.log4j:log4j-to-slf4j:${log4JVersion}"
   implementation 'org.eclipse.angus:angus-activation:2.0.3'
 
-  implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.21.3"
+  implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.22.0"
   implementation "com.opencsv:opencsv:5.12.0"
 
   testRuntimeOnly "org.junit.platform:junit-platform-launcher"
