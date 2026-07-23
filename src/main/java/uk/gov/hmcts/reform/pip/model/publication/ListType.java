@@ -28,21 +28,21 @@ import static uk.gov.hmcts.reform.pip.model.location.LocationType.VENUE;
 @AllArgsConstructor
 public enum ListType {
     SJP_PUBLIC_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null,
-                    "SJP Public List (Full list)", true, false, false, false, false),
+                    "SJP Public List (Full list)", true, false, false, false),
     SJP_DELTA_PUBLIC_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, SJP_PUBLIC_LIST,
-                          "SJP Public List (New cases)", true, false, false, false, false),
+                          "SJP Public List (New cases)", true, false, false, false),
     SJP_PRESS_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null,
-                   "SJP Press List (Full list)", true, false, false, false, false),
+                   "SJP Press List (Full list)", true, false, false, false),
     SJP_DELTA_PRESS_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, SJP_PRESS_LIST,
-                         "SJP Press List (New cases)", true, false, false, false, false),
+                         "SJP Press List (New cases)", true, false, false, false),
     SJP_PRESS_REGISTER(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES),
     CROWN_DAILY_LIST(VENUE, List.of(CRIME_IDAM), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, true),
     CROWN_FIRM_LIST(VENUE, List.of(CRIME_IDAM), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, true),
     CROWN_WARNED_LIST(VENUE, List.of(CRIME_IDAM), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, true),
     MAGISTRATES_PUBLIC_LIST(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, null,
-                            "Magistrates Public List", false, true, false, false, false),
+                            "Magistrates Public List", true, false, false, false),
     MAGISTRATES_STANDARD_LIST(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, null,
-                              "Magistrates Standard List", false, true, false, false, false),
+                              "Magistrates Standard List", true, false, false, false),
     CIVIL_DAILY_CAUSE_LIST(VENUE, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     FAMILY_DAILY_CAUSE_LIST(VENUE, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     CIVIL_AND_FAMILY_DAILY_CAUSE_LIST(VENUE, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
@@ -102,6 +102,9 @@ public enum ListType {
     RPT_SOUTHERN_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
         RPT_LONDON_WEEKLY_HEARING_LIST, "First-tier Tribunal (Residential Property Tribunal): "
                              + "Southern region Weekly Hearing List"),
+    FTT_RPT_MARKET_RENTS_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+        RPT_LONDON_WEEKLY_HEARING_LIST, "First-tier Tribunal (Residential Property Tribunal): Market Rents "
+                             + "Weekly Hearing List"),
     AST_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     SSCS_MIDLANDS_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
          "Midlands Social Security and Child Support Tribunal Daily Hearing List"),
@@ -124,7 +127,7 @@ public enum ListType {
         SSCS_MIDLANDS_DAILY_HEARING_LIST,
         "London Social Security and Child Support Tribunal Daily Hearing List"),
     MENTAL_HEALTH_TRIBUNAL_HEARING_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null,
-        "Mental Health Tribunal Daily Hearing List", true, false, false, false, false),
+        "Mental Health Tribunal Daily Hearing List", true, false, false, false),
     LONDON_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     COUNTY_COURT_LONDON_CIVIL_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                                "County Court at Central London Civil Daily Cause List"),
@@ -247,9 +250,6 @@ public enum ListType {
 
     @Accessors(fluent = true)
     private boolean hasExcel;
-
-    @Accessors(fluent = true)
-    private boolean hasCsv;
 
     @Accessors(fluent = true)
     private boolean hasAdditionalPdf = true;
