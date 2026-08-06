@@ -21,8 +21,8 @@ import static uk.gov.hmcts.reform.pip.model.report.MiDataInterface.formatDateTim
 @NoArgsConstructor
 public class DeletedAccountMiData implements MiDataInterface {
     private UUID userId;
+    private String provenanceUserId;
     private UserProvenances userProvenance;
-    private String email;
     private Roles roles;
     private LocalDateTime lastSignedInDate;
     private LocalDateTime deletedDate;
@@ -30,14 +30,14 @@ public class DeletedAccountMiData implements MiDataInterface {
     @JsonCreator
     public DeletedAccountMiData(
         @JsonProperty("userId") UUID userId,
+        @JsonProperty("provenanceUserId") String provenanceUserId,
         @JsonProperty("userProvenance") UserProvenances userProvenance,
-        @JsonProperty("email") String email,
         @JsonProperty("roles") Roles roles,
         @JsonProperty("lastSignedInDate") LocalDateTime lastSignedInDate,
         @JsonProperty("deletedDate") LocalDateTime deletedDate) {
         this.userId = userId;
+        this.provenanceUserId = provenanceUserId;
         this.userProvenance = userProvenance;
-        this.email = email;
         this.roles = roles;
         this.lastSignedInDate = lastSignedInDate;
         this.deletedDate = deletedDate;
@@ -51,8 +51,8 @@ public class DeletedAccountMiData implements MiDataInterface {
     public String[] generateReportData() {
         return new String[] {
             Objects.toString(userId, ""),
+            Objects.toString(provenanceUserId, ""),
             Objects.toString(userProvenance, ""),
-            Objects.toString(email, ""),
             Objects.toString(roles, ""),
             formatDateTime(lastSignedInDate),
             formatDateTime(deletedDate)
