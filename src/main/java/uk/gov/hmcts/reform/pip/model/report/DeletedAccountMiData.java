@@ -44,7 +44,9 @@ public class DeletedAccountMiData implements MiDataInterface {
     }
 
     public static String[] generateReportHeaders() {
-        return new String[] {"user_id", "user_provenance", "email", "roles", "last_signed_in_date", "deleted_date"};
+        return new String[] {
+            "user_id", "provenance_user_id", "user_provenance", "roles", "last_signed_in_date", "deleted_date"
+        };
     }
 
     @Override
