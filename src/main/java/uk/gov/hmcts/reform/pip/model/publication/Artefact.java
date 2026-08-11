@@ -93,11 +93,6 @@ public class Artefact {
     private Float payloadSize;
 
     /**
-     * Metadata that will be indexed for searching.
-     */
-    private Map<String, List<Object>> search;
-
-    /**
      * A counter to show how many times the artefact has been superseded. Default is 0.
      */
     private int supersededCount;
