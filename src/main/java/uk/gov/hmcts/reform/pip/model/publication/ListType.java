@@ -227,7 +227,8 @@ public enum ListType {
                                       "Circuit Commercial Court Daily Cause List"),
     TECHNOLOGY_AND_CONSTRUCTION_COURT_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                         "Technology and Construction Court Daily Cause List"),
-    BUSINESS_AND_PROPERTY_DIVISION_ROLLS_BUILDING_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+    BUSINESS_AND_PROPERTY_DIVISION_ROLLS_BUILDING_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM),
+                                                                   ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                   "Business & Property Division Rolls Building Daily Cause List");
 
     /**
