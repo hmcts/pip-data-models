@@ -151,8 +151,8 @@ public enum ListType {
         "Intellectual Property and Enterprise Court"),
     INTELLECTUAL_PROPERTY_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                                     "Intellectual Property List"),
-    LONDON_CIRCUIT_COMMERCIAL_COURT(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                                        "London Circuit Commercial Court"),
+    COMMERCIAL_COURT(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+                                                        "Commercial Court"),
     PATENTS_COURT(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                         "Patents Court"),
     PENSIONS_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
@@ -170,8 +170,8 @@ public enum ListType {
         NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, "Admiralty Court List"),
     BUSINESS_LIST(
         NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, "Business List"),
-    CHANCERY_APPEALS_CHD_DAILY_CAUSE_LIST(
-        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, "Chancery Appeals (ChD) Daily Cause List"),
+    APPEALS_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, "Appeals List"),
     COMMERCIAL_COURT_KB_DAILY_CAUSE_LIST(
         NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, "Commercial Court (KB) Daily Cause List"),
     COMPANIES_WINDING(
@@ -226,7 +226,9 @@ public enum ListType {
     CIRCUIT_COMMERCIAL_COURT_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                       "Circuit Commercial Court Daily Cause List"),
     TECHNOLOGY_AND_CONSTRUCTION_COURT_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                        "Technology and Construction Court Daily Cause List");
+                                        "Technology and Construction Court Daily Cause List"),
+    BUSINESS_AND_PROPERTY_DIVISION_ROLLS_BUILDING_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+                                  "Business & Property Division Rolls Building Daily Cause List");
 
     /**
      * Flag that represents the Location Type level the list displays at.
