@@ -65,19 +65,21 @@ public enum ListType {
     PHT_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     GRC_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     WPAFCC_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
-    UT_IAC_JR_LONDON_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                        "Upper Tribunal (Immigration and Asylum) Chamber - Judicial Review: London Daily Hearing List"),
-    UT_IAC_JR_LEEDS_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                       "Upper Tribunal (Immigration and Asylum) Chamber - Judicial Review: Leeds Daily Hearing List"),
-    UT_IAC_JR_MANCHESTER_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                            UT_IAC_JR_LEEDS_DAILY_HEARING_LIST,
-                                            "Upper Tribunal (Immigration and Asylum) Chamber - Judicial Review: Manchester Daily Hearing List"),
-    UT_IAC_JR_BIRMINGHAM_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                            UT_IAC_JR_LEEDS_DAILY_HEARING_LIST,
-                                            "Upper Tribunal (Immigration and Asylum) Chamber - Judicial Review: Birmingham Daily Hearing List"),
-    UT_IAC_JR_CARDIFF_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                         UT_IAC_JR_LEEDS_DAILY_HEARING_LIST,
-                                         "Upper Tribunal (Immigration and Asylum) Chamber - Judicial Review: Bristol and Cardiff Daily Hearing List"),
+    UT_IAC_JR_LONDON_DAILY_HEARING_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+        "Upper Tribunal (Immigration and Asylum) Chamber - Judicial Review: London Daily Hearing List"),
+    UT_IAC_JR_LEEDS_DAILY_HEARING_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+        "Upper Tribunal (Immigration and Asylum) Chamber - Judicial Review: Leeds Daily Hearing List"),
+    UT_IAC_JR_MANCHESTER_DAILY_HEARING_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, UT_IAC_JR_LEEDS_DAILY_HEARING_LIST,
+        "Upper Tribunal (Immigration and Asylum) Chamber - Judicial Review: Manchester Daily Hearing List"),
+    UT_IAC_JR_BIRMINGHAM_DAILY_HEARING_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, UT_IAC_JR_LEEDS_DAILY_HEARING_LIST,
+        "Upper Tribunal (Immigration and Asylum) Chamber - Judicial Review: Birmingham Daily Hearing List"),
+    UT_IAC_JR_CARDIFF_DAILY_HEARING_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, UT_IAC_JR_LEEDS_DAILY_HEARING_LIST,
+        "Upper Tribunal (Immigration and Asylum) Chamber - Judicial Review: Bristol and Cardiff Daily Hearing List"),
     UT_IAC_STATUTORY_APPEALS_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     SIAC_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                              "Special Immigration Appeals Commission Weekly Hearing List"),
@@ -91,23 +93,24 @@ public enum ListType {
     UT_T_AND_CC_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     UT_LC_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     UT_AAC_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
-    RPT_LONDON_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                   "First-tier Tribunal (Residential Property Tribunal): London region Weekly Hearing List"),
-    RPT_EASTERN_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                    RPT_LONDON_WEEKLY_HEARING_LIST, "First-tier Tribunal (Residential Property Tribunal): Eastern "
-                                        + "region Weekly Hearing List"),
-    RPT_MIDLANDS_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                     RPT_LONDON_WEEKLY_HEARING_LIST, "First-tier Tribunal (Residential Property Tribunal): Midlands region "
-                                         + "Weekly Hearing List"),
-    RPT_NORTHERN_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                     RPT_LONDON_WEEKLY_HEARING_LIST, "First-tier Tribunal (Residential Property Tribunal): Northern region "
-                                         + "Weekly Hearing List"),
-    RPT_SOUTHERN_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                     RPT_LONDON_WEEKLY_HEARING_LIST, "First-tier Tribunal (Residential Property Tribunal): "
-                                         + "Southern region Weekly Hearing List"),
-    FTT_RPT_MARKET_RENTS_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                             RPT_LONDON_WEEKLY_HEARING_LIST, "First-tier Tribunal (Residential Property Tribunal): Market Rents "
-                                                 + "Weekly Hearing List"),
+    RPT_LONDON_WEEKLY_HEARING_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+        "First-tier Tribunal (Residential Property Tribunal): London region Weekly Hearing List"),
+    RPT_EASTERN_WEEKLY_HEARING_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, RPT_LONDON_WEEKLY_HEARING_LIST,
+        "First-tier Tribunal (Residential Property Tribunal): Eastern region Weekly Hearing List"),
+    RPT_MIDLANDS_WEEKLY_HEARING_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, RPT_LONDON_WEEKLY_HEARING_LIST,
+        "First-tier Tribunal (Residential Property Tribunal): Midlands region Weekly Hearing List"),
+    RPT_NORTHERN_WEEKLY_HEARING_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, RPT_LONDON_WEEKLY_HEARING_LIST,
+        "First-tier Tribunal (Residential Property Tribunal): Northern region Weekly Hearing List"),
+    RPT_SOUTHERN_WEEKLY_HEARING_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, RPT_LONDON_WEEKLY_HEARING_LIST,
+        "First-tier Tribunal (Residential Property Tribunal): Southern region Weekly Hearing List"),
+    FTT_RPT_MARKET_RENTS_WEEKLY_HEARING_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, RPT_LONDON_WEEKLY_HEARING_LIST,
+        "First-tier Tribunal (Residential Property Tribunal): Market Rents Weekly Hearing List"),
     AST_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     SSCS_MIDLANDS_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                      "Midlands Social Security and Child Support Tribunal Daily Hearing List"),
@@ -116,7 +119,8 @@ public enum ListType {
                                        "South East Social Security and Child Support Tribunal Daily Hearing List"),
     SSCS_WALES_AND_SOUTH_WEST_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                                  SSCS_MIDLANDS_DAILY_HEARING_LIST,
-                                                 "Wales and South West Social Security and Child Support Tribunal Daily Hearing List"),
+                                                 "Wales and South West Social Security and Child Support Tribunal "
+                                                     + "Daily Hearing List"),
     SSCS_SCOTLAND_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                      SSCS_MIDLANDS_DAILY_HEARING_LIST,
                                      "Scotland Social Security and Child Support Tribunal Daily Hearing List"),
@@ -208,8 +212,10 @@ public enum ListType {
         NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
         BIRMINGHAM_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST,
         "Bristol and Cardiff Administrative Court Daily Cause List"),
-    MANCHESTER_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                                     BIRMINGHAM_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST, "Manchester Administrative Court Daily Cause List"),
+    MANCHESTER_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+        BIRMINGHAM_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST,
+        "Manchester Administrative Court Daily Cause List"),
     LEEDS_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     PCOL_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     SEND_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
