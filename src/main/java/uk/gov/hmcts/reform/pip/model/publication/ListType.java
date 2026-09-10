@@ -147,21 +147,27 @@ public enum ListType {
     SENIOR_COURTS_COSTS_OFFICE_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     MAYOR_AND_CITY_CIVIL_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                           "Mayor & City Civil Daily Cause List"),
-    INTERIM_APPLICATIONS_CHD_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                              "Interim Applications List Daily Cause List"),
+    INTERIM_APPLICATIONS_CHD_DAILY_CAUSE_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+        "Interim Applications List Daily Cause List"),
+    BUSINESS_AND_PROPERTY_DIVISION_ROLLS_BUILDING_DAILY_CAUSE_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+        "Business and Property Division Rolls Building Daily Cause List"),
     INTELLECTUAL_PROPERTY_AND_ENTERPRISE_COURT_DAILY_CAUSE_LIST(
         NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
         "Intellectual Property and Enterprise Court (ChD) Daily Cause List", false, false, false, true),
-    INTELLECTUAL_PROPERTY_LIST_CHD_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                                    null, "Intellectual Property List (ChD) Daily Cause List",
-                                                    false, false, false, true),
-    LONDON_CIRCUIT_COMMERCIAL_COURT_KB_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                                        null, "London Circuit Commercial Court (KB) Daily Cause List",
-                                                        false, false, false, true),
-    PATENTS_COURT_CHD_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
-                                       "Patents Court (ChD) Daily Cause List", false, false, false, true),
-    PENSIONS_LIST_CHD_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
-                                       "Pensions List (ChD) Daily Cause List", false, false, false, true),
+    INTELLECTUAL_PROPERTY_LIST_CHD_DAILY_CAUSE_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Intellectual Property List (ChD) Daily Cause List", false, false, false, true),
+    LONDON_CIRCUIT_COMMERCIAL_COURT_KB_DAILY_CAUSE_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "London Circuit Commercial Court (KB) Daily Cause List", false, false, false, true),
+    PATENTS_COURT_CHD_DAILY_CAUSE_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Patents Court (ChD) Daily Cause List", false, false, false, true),
+    PENSIONS_LIST_CHD_DAILY_CAUSE_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Pensions List (ChD) Daily Cause List", false, false, false, true),
     PROPERTY_TRUSTS_PROBATE_LIST_CHD_DAILY_CAUSE_LIST(
         NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, PENSIONS_LIST_CHD_DAILY_CAUSE_LIST,
         "Property, Trusts and Probate List (ChD) Daily Cause List", false, false, false, true),
@@ -181,7 +187,8 @@ public enum ListType {
         NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
         "Chancery Appeals (ChD) Daily Cause List", false, false, false, true),
     COMMERCIAL_COURT_KB_DAILY_CAUSE_LIST(
-        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, "Commercial Court (KB) Daily Cause List"),
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Commercial Court (KB) Daily Cause List", false, false, false, true),
     COMPANIES_WINDING_UP_CHD_DAILY_CAUSE_LIST(
         NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
         "Companies Winding Up (ChD) Daily Cause List", false, false, false, true),
@@ -236,11 +243,7 @@ public enum ListType {
     CIRCUIT_COMMERCIAL_COURT_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                               "Circuit Commercial Court Daily Cause List"),
     TECHNOLOGY_AND_CONSTRUCTION_COURT_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                                       "Technology and Construction Court Daily Cause List"),
-    BUSINESS_AND_PROPERTY_DIVISION_ROLLS_BUILDING_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM),
-                                                                   ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
-                                                                   "Business & Property Division Rolls Building Daily Cause List",
-                                                                   true, false, false, false);
+                                                       "Technology and Construction Court Daily Cause List");
 
     /**
      * Flag that represents the Location Type level the list displays at.
