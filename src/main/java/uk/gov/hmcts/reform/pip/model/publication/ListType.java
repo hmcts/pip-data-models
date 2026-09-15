@@ -64,7 +64,7 @@ public enum ListType {
                         false, false),
     CIC_DAILY_HEARING_LIST(VENUE, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, true),
     CST_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
-                            "Charity Tribunal Weekly Hearing List", true, false, false, false),
+                            "Care Standards Tribunal Weekly Hearing List", true, false, false, false),
     PHT_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     GRC_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
         "General Regulatory Chamber Weekly Hearing List", true, false,
