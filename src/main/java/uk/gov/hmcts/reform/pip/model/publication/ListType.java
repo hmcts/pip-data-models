@@ -113,20 +113,21 @@ public enum ListType {
     UT_AAC_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
                               "Upper Tribunal (Administrative Appeals Chamber) Daily hearing list",
                               true, false, false, false),
-    RPT_LONDON_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                           "First-tier Tribunal (Residential Property Tribunal): London region Weekly Hearing List"),
+    RPT_LONDON_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+                           "First-tier Tribunal (Residential Property Tribunal): London region Weekly Hearing List",
+                                   true, false, false, false),
     RPT_EASTERN_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
         RPT_LONDON_WEEKLY_HEARING_LIST, "First-tier Tribunal (Residential Property Tribunal): Eastern "
-                            + "region Weekly Hearing List"),
+                            + "region Weekly Hearing List", true, false, false, false),
     RPT_MIDLANDS_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
         RPT_LONDON_WEEKLY_HEARING_LIST, "First-tier Tribunal (Residential Property Tribunal): Midlands region "
-                             + "Weekly Hearing List"),
+                             + "Weekly Hearing List", true, false, false, false),
     RPT_NORTHERN_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
         RPT_LONDON_WEEKLY_HEARING_LIST, "First-tier Tribunal (Residential Property Tribunal): Northern region "
-                             + "Weekly Hearing List"),
+                             + "Weekly Hearing List", true, false, false, false),
     RPT_SOUTHERN_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
         RPT_LONDON_WEEKLY_HEARING_LIST, "First-tier Tribunal (Residential Property Tribunal): "
-                             + "Southern region Weekly Hearing List"),
+                             + "Southern region Weekly Hearing List", true, false, false, false),
     FTT_RPT_MARKET_RENTS_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
         RPT_LONDON_WEEKLY_HEARING_LIST, "First-tier Tribunal (Residential Property Tribunal): Market Rents "
                              + "Weekly Hearing List"),
