@@ -130,7 +130,7 @@ public enum ListType {
                              + "Southern region Weekly Hearing List", true, false, false, false),
     FTT_RPT_MARKET_RENTS_WEEKLY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
         RPT_LONDON_WEEKLY_HEARING_LIST, "First-tier Tribunal (Residential Property Tribunal): Market Rents "
-                             + "Weekly Hearing List"),
+                             + "Weekly Hearing List", true, false, false, false),
     AST_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
                            "Asylum Support Tribunal Daily hearing list", true, false,
                            false, false),
