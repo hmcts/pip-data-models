@@ -43,6 +43,9 @@ public enum ListType {
                             "Magistrates Public List", true, false, false, false),
     MAGISTRATES_STANDARD_LIST(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, null,
                               "Magistrates Standard List", true, false, false, false),
+    TRAFFIC_VIRTUAL_COURTS_LISTS(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, null,
+                                 "Traffic Virtual Courts List",
+                                 true, false, false, false),
     CIVIL_DAILY_CAUSE_LIST(VENUE, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
                            "Civil Daily Cause List", true, false, false, false),
     FAMILY_DAILY_CAUSE_LIST(VENUE, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
@@ -238,6 +241,7 @@ public enum ListType {
                                       "Circuit Commercial Court Daily Cause List"),
     TECHNOLOGY_AND_CONSTRUCTION_COURT_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                         "Technology and Construction Court Daily Cause List");
+
 
     /**
      * Flag that represents the Location Type level the list displays at.
