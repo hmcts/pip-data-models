@@ -131,7 +131,7 @@ public enum ListType {
         "London Social Security and Child Support Tribunal Daily Hearing List"),
     MENTAL_HEALTH_TRIBUNAL_HEARING_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null,
         "Mental Health Tribunal Daily Hearing List", true, false, false, false),
-    TRAFFIC_VIRTUAL_COURTS_LISTS(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, null,
+    TRAFFIC_VIRTUAL_COURTS_LIST(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, null,
                                  "Traffic Virtual Courts List",
                                  false, false, false, false),
     LONDON_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
