@@ -174,46 +174,60 @@ public enum ListType {
                                                 true, false, false, false),
     MAYOR_AND_CITY_CIVIL_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
                                           "Mayor & City Civil Daily Cause List", true, false, false, false),
-    INTERIM_APPLICATIONS_CHD_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                  "Interim Applications List (ChD) Daily Cause List"),
-    INTELLECTUAL_PROPERTY_AND_ENTERPRISE_COURT_DAILY_CAUSE_LIST(
+    INTERIM_APPLICATIONS_CHD_DAILY_CAUSE_LIST(
         NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-        "Intellectual Property and Enterprise Court (ChD) Daily Cause List"),
-    INTELLECTUAL_PROPERTY_LIST_CHD_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                                    "Intellectual Property List (ChD) Daily Cause List"),
-    LONDON_CIRCUIT_COMMERCIAL_COURT_KB_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                                        "London Circuit Commercial Court (KB) Daily Cause List"),
-    PATENTS_COURT_CHD_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                        "Patents Court (ChD) Daily Cause List"),
-    PENSIONS_LIST_CHD_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                       "Pensions List (ChD) Daily Cause List"),
+        "Interim Applications List Daily Cause List"),
+    BUSINESS_AND_PROPERTY_DIVISION_ROLLS_BUILDING_DAILY_CAUSE_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+        "Business and Property Division Rolls Building Daily Cause List"),
+    INTELLECTUAL_PROPERTY_AND_ENTERPRISE_COURT_DAILY_CAUSE_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Intellectual Property and Enterprise Court (ChD) Daily Cause List", false, false, false, true),
+    INTELLECTUAL_PROPERTY_LIST_CHD_DAILY_CAUSE_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Intellectual Property List (ChD) Daily Cause List", false, false, false, true),
+    LONDON_CIRCUIT_COMMERCIAL_COURT_KB_DAILY_CAUSE_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "London Circuit Commercial Court (KB) Daily Cause List", false, false, false, true),
+    PATENTS_COURT_CHD_DAILY_CAUSE_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Patents Court (ChD) Daily Cause List", false, false, false, true),
+    PENSIONS_LIST_CHD_DAILY_CAUSE_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Pensions List (ChD) Daily Cause List", false, false, false, true),
     PROPERTY_TRUSTS_PROBATE_LIST_CHD_DAILY_CAUSE_LIST(
         NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, PENSIONS_LIST_CHD_DAILY_CAUSE_LIST,
-        "Property, Trusts and Probate List (ChD) Daily Cause List"),
+        "Property, Trusts and Probate List (ChD) Daily Cause List", false, false, false, true),
     REVENUE_LIST_CHD_DAILY_CAUSE_LIST(
         NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, PENSIONS_LIST_CHD_DAILY_CAUSE_LIST,
-        "Revenue List (ChD) Daily Cause List"),
+        "Revenue List (ChD) Daily Cause List", false, false, false, true),
     TECHNOLOGY_AND_CONSTRUCTION_COURT_KB_DAILY_CAUSE_LIST(
         NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
-        "Technology and Construction Court (KB) Daily Cause List"),
+        "Technology and Construction Court (KB) Daily Cause List", false, false, false, true),
     ADMIRALTY_COURT_KB_DAILY_CAUSE_LIST(
-        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, "Admiralty Court (KB) Daily Cause List"),
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Admiralty Court (KB) Daily Cause List", false, false, false, true),
     BUSINESS_LIST_CHD_DAILY_CAUSE_LIST(
-        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, "Business List (ChD) Daily Cause List"),
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Business List (ChD) Daily Cause List", false, false, false, true),
     CHANCERY_APPEALS_CHD_DAILY_CAUSE_LIST(
-        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, "Chancery Appeals (ChD) Daily Cause List"),
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Chancery Appeals (ChD) Daily Cause List", false, false, false, true),
     COMMERCIAL_COURT_KB_DAILY_CAUSE_LIST(
-        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, "Commercial Court (KB) Daily Cause List"),
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Commercial Court (KB) Daily Cause List", false, false, false, true),
     COMPANIES_WINDING_UP_CHD_DAILY_CAUSE_LIST(
-        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, "Companies Winding Up (ChD) Daily Cause List"),
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Companies Winding Up (ChD) Daily Cause List", false, false, false, true),
     COMPETITION_LIST_CHD_DAILY_CAUSE_LIST(
         NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, BUSINESS_LIST_CHD_DAILY_CAUSE_LIST,
-        "Competition List (ChD) Daily Cause List"),
+        "Competition List (ChD) Daily Cause List", false, false, false, true),
     FINANCIAL_LIST_CHD_KB_DAILY_CAUSE_LIST(
-        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, "Financial List (ChD/KB) Daily Cause List"),
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Financial List (ChD/KB) Daily Cause List", false, false, false, true),
     INSOLVENCY_AND_COMPANIES_COURT_CHD_DAILY_CAUSE_LIST(
-        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-        "Insolvency & Companies Court (ChD) Daily Cause List"),
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Insolvency & Companies Court (ChD) Daily Cause List", false, false, false, true),
     COURT_OF_APPEAL_CIVIL_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
                                            "Court of Appeal (Civil Division) Daily Cause List",
                                            true, false, false, false),
@@ -222,8 +236,10 @@ public enum ListType {
         NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
         BIRMINGHAM_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST,
         "Bristol and Cardiff Administrative Court Daily Cause List"),
-    MANCHESTER_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-            BIRMINGHAM_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST, "Manchester Administrative Court Daily Cause List"),
+    MANCHESTER_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
+        BIRMINGHAM_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST,
+        "Manchester Administrative Court Daily Cause List"),
     LEEDS_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     PCOL_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES),
     SEND_DAILY_HEARING_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
@@ -247,17 +263,19 @@ public enum ListType {
     CROWN_FIRM_PDDA_LIST(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_AND_LEGACY_ROLES, null,
                          "Crown Firm List", true, false, false, false),
     CROWN_WARNED_PDDA_LIST(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_AND_LEGACY_ROLES, null,
-                           "Crown Warned List", true, false, false, false),
+                           "Crown Warned List", true, false, false, true),
+    CROWN_ADVANCE_PDDA_LIST(VENUE, List.of(CRIME_IDAM, PI_AAD), ALL_VERIFIED_THIRD_PARTY_CRIME_AND_LEGACY_ROLES, null,
+                           "Crown Advance List", true, false, false, false),
     HIGH_COURT_CIVIL_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                               "High Court Civil Daily Cause List"),
+                                      "High Court Civil Daily Cause List"),
     HIGH_COURT_FAMILY_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                "High Court Family Daily Cause List"),
+                                       "High Court Family Daily Cause List"),
     BUSINESS_AND_PROPERTY_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                  "Business & Property Daily Cause List"),
+                                           "Business & Property Daily Cause List"),
     CIRCUIT_COMMERCIAL_COURT_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                      "Circuit Commercial Court Daily Cause List"),
+                                              "Circuit Commercial Court Daily Cause List"),
     TECHNOLOGY_AND_CONSTRUCTION_COURT_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-                                        "Technology and Construction Court Daily Cause List");
+                                                       "Technology and Construction Court Daily Cause List");
 
     /**
      * Flag that represents the Location Type level the list displays at.
