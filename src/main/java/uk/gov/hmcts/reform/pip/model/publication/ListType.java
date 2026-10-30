@@ -369,12 +369,6 @@ public enum ListType {
     }
 
     ListType(LocationType listLocationLevel, List<UserProvenances> allowedProvenances,
-             List<Roles> allowedThirdPartyRoles, String friendlyName, boolean isScheduledSubscription) {
-        this(listLocationLevel, allowedProvenances, allowedThirdPartyRoles, friendlyName);
-        this.isScheduledSubscription = isScheduledSubscription;
-    }
-
-    ListType(LocationType listLocationLevel, List<UserProvenances> allowedProvenances,
              List<Roles> allowedThirdPartyRoles, ListType parentListType, String friendlyName) {
         this(listLocationLevel, allowedProvenances, allowedThirdPartyRoles, friendlyName);
         this.parentListType = parentListType;
