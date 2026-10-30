@@ -8,14 +8,14 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static uk.gov.hmcts.reform.pip.model.subscription.SearchType.CASE_ID;
+import static uk.gov.hmcts.reform.pip.model.subscription.SearchType.CASE_NUMBER;
 
 class AllSubscriptionMiDataTest {
 
     private static final UUID SUBSCRIPTION_ID = UUID.randomUUID();
     private static final UUID USER_ID = UUID.randomUUID();
     private static final Channel EMAIL_CHANNEL = Channel.EMAIL;
-    private static final SearchType SEARCH_TYPE = CASE_ID;
+    private static final SearchType SEARCH_TYPE = CASE_NUMBER;
     private static final LocalDateTime CREATED_DATE = LocalDateTime.of(2022, 1, 19, 13, 45, 50);
     private static final String LOCATION_NAME = "Location";
 
