@@ -8,7 +8,6 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Map;
 import java.util.UUID;
 
 /**
@@ -91,11 +90,6 @@ public class Artefact {
      * The size of the input payload.
      */
     private Float payloadSize;
-
-    /**
-     * Metadata that will be indexed for searching.
-     */
-    private Map<String, List<Object>> search;
 
     /**
      * A counter to show how many times the artefact has been superseded. Default is 0.
