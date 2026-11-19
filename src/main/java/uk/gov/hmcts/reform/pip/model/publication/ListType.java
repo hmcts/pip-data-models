@@ -176,6 +176,9 @@ public enum ListType {
                                    true, false, false, false),
     MENTAL_HEALTH_TRIBUNAL_HEARING_LIST(NATIONAL, List.of(PI_AAD), ALL_VERIFIED_THIRD_PARTY_PRESS_ROLES, null,
         "Mental Health Tribunal Daily Hearing List", true, false, false, false),
+    TRAFFIC_VIRTUAL_COURTS_LIST(VENUE, List.of(CRIME_IDAM), ALL_VERIFIED_THIRD_PARTY_CRIME_ROLES, null,
+                                 "Traffic Virtual Courts List",
+                                 false, false, false, false),
     LONDON_ADMINISTRATIVE_COURT_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
                                                  "London Administrative Court Daily Cause List",
                                                  true, false, false, false),
@@ -200,11 +203,11 @@ public enum ListType {
     MAYOR_AND_CITY_CIVIL_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
                                           "Mayor & City Civil Daily Cause List", true, false, false, false),
     INTERIM_APPLICATIONS_CHD_DAILY_CAUSE_LIST(
-        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-        "Interim Applications List Daily Cause List"),
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Interim Applications List Daily Cause List",true, false, false, false),
     BUSINESS_AND_PROPERTY_DIVISION_ROLLS_BUILDING_DAILY_CAUSE_LIST(
-        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
-        "Business and Property Division Rolls Building Daily Cause List"),
+        NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
+        "Business and Property Division Rolls Building Daily Cause List", true, false, false, false),
     INTELLECTUAL_PROPERTY_AND_ENTERPRISE_COURT_DAILY_CAUSE_LIST(
         NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES, null,
         "Intellectual Property and Enterprise Court (ChD) Daily Cause List", false, false, false, true),
@@ -307,6 +310,7 @@ public enum ListType {
                                               "Circuit Commercial Court Daily Cause List"),
     TECHNOLOGY_AND_CONSTRUCTION_COURT_DAILY_CAUSE_LIST(NATIONAL, List.of(CFT_IDAM), ALL_VERIFIED_THIRD_PARTY_CFT_ROLES,
                                                        "Technology and Construction Court Daily Cause List");
+
 
     /**
      * Flag that represents the Location Type level the list displays at.
